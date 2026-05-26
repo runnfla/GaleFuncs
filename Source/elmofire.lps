@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectSession>
+    <PathDelim Value="\"/>
+    <Version Value="12"/>
+    <BuildModes Active="Default"/>
+    <Units>
+      <Unit>
+        <Filename Value="elmofire.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <CursorPos X="18" Y="50"/>
+        <UsageCount Value="51"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\RunFormula\runformula.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="RunFormula"/>
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="1"/>
+        <UsageCount Value="51"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\TEST\META-INF\manifest.xml"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="44" Y="5"/>
+        <UsageCount Value="20"/>
+        <DefaultSyntaxHighlighter Value="XML"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\TEST\description.xml"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="38" Y="9"/>
+        <UsageCount Value="20"/>
+        <DefaultSyntaxHighlighter Value="XML"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\TEST\elmofire.py"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos Y="50"/>
+        <UsageCount Value="14"/>
+        <DefaultSyntaxHighlighter Value="Python"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\TEST\CalcAddIn.components"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="14" Y="8"/>
+        <UsageCount Value="11"/>
+        <DefaultSyntaxHighlighter Value="None"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\TEST\elmofire.xcu"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="3"/>
+        <CursorPos X="24" Y="29"/>
+        <UsageCount Value="10"/>
+        <DefaultSyntaxHighlighter Value="None"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\TEST\registry\data\org\openoffice\Office\elmofire.xcu"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="22" Y="25"/>
+        <UsageCount Value="10"/>
+        <DefaultSyntaxHighlighter Value="None"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\TEST\registry\data\org\openoffice\оffice\CalcAddIn.xcu"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="2"/>
+        <UsageCount Value="10"/>
+        <DefaultSyntaxHighlighter Value="None"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\TEST\registry\data\org\Office\CalcAddIn.xcu"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="22" Y="19"/>
+        <UsageCount Value="12"/>
+        <DefaultSyntaxHighlighter Value="None"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\TEST\idl\XElmoFire.idl"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="27" Y="8"/>
+        <UsageCount Value="18"/>
+        <DefaultSyntaxHighlighter Value="None"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\TEST\compile_idl.bat"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="59" Y="26"/>
+        <UsageCount Value="18"/>
+        <DefaultSyntaxHighlighter Value="Bat"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\TEST\registry\schema\org\openoffice\Office\CalcAddIn.xcu"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="22" Y="24"/>
+        <UsageCount Value="10"/>
+        <DefaultSyntaxHighlighter Value="None"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\TEST\registry\data\org\openoffice\Office\Components.xcu"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="18" Y="11"/>
+        <UsageCount Value="10"/>
+        <DefaultSyntaxHighlighter Value="None"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\TEST\registry\data\org\openoffice\Office\CalcAddIn.xcu"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="18" Y="28"/>
+        <UsageCount Value="10"/>
+        <DefaultSyntaxHighlighter Value="None"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\TEST\elmofire.components"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="14" Y="8"/>
+        <UsageCount Value="10"/>
+        <DefaultSyntaxHighlighter Value="None"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\TEST\reg.uno.py"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="42" Y="12"/>
+        <UsageCount Value="16"/>
+        <DefaultSyntaxHighlighter Value="Python"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\TEST\pythonpath\org\openoffice\comp\addin\sample\python\elmofire.py"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="26" Y="2"/>
+        <UsageCount Value="13"/>
+        <DefaultSyntaxHighlighter Value="Python"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\TEST\pythonpath\org\openoffice\comp\addin\sample\elmofire.py"/>
+        <EditorIndex Value="-1"/>
+        <UsageCount Value="10"/>
+        <DefaultSyntaxHighlighter Value="Python"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\TEST\reg.py"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="40" Y="12"/>
+        <UsageCount Value="10"/>
+        <DefaultSyntaxHighlighter Value="Python"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\TEST\pythonpath\org\openoffice\addin\python\elmofire.py"/>
+        <EditorIndex Value="-1"/>
+        <UsageCount Value="10"/>
+        <DefaultSyntaxHighlighter Value="Python"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\TEST\pythonpath\org\openoffice\comp\addin\elmofire.py"/>
+        <EditorIndex Value="-1"/>
+        <UsageCount Value="10"/>
+        <DefaultSyntaxHighlighter Value="Python"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\TEST\pythonpath\addin\elmofire.py"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="30"/>
+        <CursorPos X="14" Y="54"/>
+        <UsageCount Value="11"/>
+        <DefaultSyntaxHighlighter Value="Python"/>
+      </Unit>
+    </Units>
+    <JumpHistory HistoryIndex="-1"/>
+    <RunParams>
+      <FormatVersion Value="2"/>
+      <Modes ActiveMode=""/>
+    </RunParams>
+  </ProjectSession>
+</CONFIG>
