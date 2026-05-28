@@ -3,7 +3,7 @@ library elmofire;
 {$mode objfpc}{$H+}
 
 uses cmem, // СТРОГО ПЕРВЫМ!
-  SysUtils, Classes,
+  SysUtils,
   RunFormula in 'RunFormula/runformula.pas';
 
 {$B-}                           // do not complete boolean evaluation
@@ -23,6 +23,8 @@ type
 
   PDataRec = ^TDataRec;
 
+function
+
 function elmo_str_py(Arg:PChar; ResStruct:PDataRec):integer; cdecl; export;
 var s : string;
 
@@ -33,16 +35,6 @@ var s : string;
 
 begin
   Result := 0;
-
-
-  with ResStruct^ do begin
-    DataType:=0;
-    AsDouble:=123.34;
-  end;
-
-  exit;
-
-
 
   ResStruct^.DataType:=0;
   if Arg=nil then exit;
@@ -58,21 +50,39 @@ begin
 
 end;
 
-function elmo_val_py(Arg:PChar):PDataRec; cdecl; export;
+function elmo_val_py(Arg:PChar; ResStruct:PDataRec):integer; cdecl; export;
 var s : string;
+                          tt : pointer;
+  StrLen: Integer;
+
+
 begin
-  Result:=nil;
+  Result := 0;
+
+  ResStruct^.DataType:=0;
   if Arg=nil then exit;
   s:=SysUtils.StrPas(Arg); // s может оказаться пустой      Result^.Value.AsPChar := StrNew(PChar(s));
-  new(Result);
-  with Result^ do begin
-    DataType:=3;
-    AsPChar:=StrNew(@s[1]);
-  end;
+
+  s := 'Lazarus получил:' + s;
+
+//  s:=#$d0+#$bc+#$d0+#$b0+#$d0+#$bc+#$d0+#$b0;
+
+  s:='0123456789'+s;
+
+  StrLen := Length(s) + 1;
+  ResStruct^.AsPChar := GetMem(StrLen);
+
+  tt:=@s[1];
+
+  Move(tt, ResStruct^.AsPChar, StrLen);
+  ResStruct^.DataType := 3;
+
+
 end;
 
-procedure elmo_free_str(Ptr:PChar); cdecl; export;
+function elmo_free_str(Ptr:PChar):integer; cdecl; export;
 begin
+  Result:=0;
   FreeMem(Ptr);
 end;
 

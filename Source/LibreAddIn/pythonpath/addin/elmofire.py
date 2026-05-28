@@ -1,8 +1,28 @@
+#*****************************************************
+#  ElmoFire Unit-aware Scripting Engine
+#  Version 0.1.a
+#  Released at 28.05.2026
+
+#  Author: Alexander Torubarov
+#  Contact: runfla@yandex.com
+
+#  Filename: elmofire.py
+#  Source Code: Python
+#  Compatible: LibreOffice Calc x64 win10 26.2.3.2
+
+#  Copyright (C) 2026 Alexander Torubarov
+#  Licensed under the MIT License.
+#  See the LICENSE file in the project root
+#  or a copy available at https://opensource.org
+#  for full license information.
+#*****************************************************
+
 import os
 import sys
 import ctypes
 import uno
 import unohelper
+import locale
 from addins import XElmoFire                      # addins is my unique identificator
 from com.sun.star.sheet import XAddIn
 from com.sun.star.lang import XLocalizable, XServiceName, Locale
@@ -19,12 +39,18 @@ class DataRec(ctypes.Structure):
 lib = None
 
 def fast_pack(args):
-    """High-speed packing of arguments into a byte string with ASCII 0x1F delimiter"""
+    """Flattens the guaranteed 2D Calc tuple and joins elements using 0x1F.
+       Total check for any empty objects (None, empty tuples, empty strings)."""
     return b'\x1f'.join(
-        b'""' if a is None or a == "" else
-        f'{a}'.encode('utf-8') if type(a) in (int, float) else
-        f'"{a}"'.encode('utf-8')
-        for a in args
+  #      b'""' if cell is None or not cell or str(cell).strip() == "" or str(cell) == "()" else
+        b'""' if not cell else
+        (
+            f'{int(cell)}'.encode('utf-8') if isinstance(cell, float) and cell.is_integer() else
+            f'{cell}'.encode('utf-8')
+        ) if isinstance(cell, (int, float)) and not isinstance(cell, bool) else
+        f'"{cell}"'.encode('utf-8')
+        for row in args
+        for cell in row
     )
 
 def call_runfla(func_id, flat_args):
@@ -55,8 +81,8 @@ def call_runfla(func_id, flat_args):
             lib.elmo_val_py.argtypes = [ctypes.c_char_p, ctypes.POINTER(DataRec)]
             lib.elmo_val_py.restype = ctypes.c_int
 
-            lib.elmo_free_str.argtypes = [ctypes.c_void_p]
-            lib.elmo_free_str.restype = None
+            lib.elmo_free_str.argtypes = [ctypes.c_char_p]
+            lib.elmo_free_str.restype = ctypes.c_int
 
         # mapping function ID to the specific library method
         if func_id == 0:
@@ -86,7 +112,7 @@ def call_runfla(func_id, flat_args):
             ptr = local_result.AsPChar
             try:
                 # direct memory reading
-                result_str = ctypes.string_at(ptr).decode('utf-8', errors='replace')
+                result_str = ctypes.c_char_p(ptr).value.decode('utf-8')
             finally:
                 # ensuring that a library crash won't close LibreCalc
                 try:

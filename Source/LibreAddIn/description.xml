@@ -16,7 +16,7 @@
 </publisher>
 
 <dependencies>
-    <OpenOffice.org-minimal-version value="4" d:name="LibreOffice 4"/>
+  <OpenOffice.org-minimal-version value="4.0" d:name="LibreOffice 4.0"/>
 </dependencies>
 
 </description>
