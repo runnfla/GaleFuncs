@@ -8,8 +8,12 @@
 <version value="0.1.a" />
 
 <display-name>
-  <value xml:lang="en">ElmoFire unit-aware scripting engine</value>
+  <value xml:lang="en">ElmoFire Add-In</value>
 </display-name>
+
+<extension-description>
+  <src xml:lang="en" xlink:href="desc.txt"/>
+</extension-description>
 
 <publisher>
   <name xlink:href="https://github.com/runnfla/ElmoFire" xml:lang="en">A.Torubarov</name>

@@ -1,5 +1,5 @@
 #*****************************************************
-#  ElmoFire Unit-aware Scripting Engine
+#  ElmoFire LibreOffice Add-In
 #  Version 0.1.a
 #  Released at 28.05.2026
 

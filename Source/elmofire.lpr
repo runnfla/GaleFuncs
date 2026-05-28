@@ -23,34 +23,78 @@ type
 
   PDataRec = ^TDataRec;
 
-function
-
-function elmo_str_py(Arg:PChar; ResStruct:PDataRec):integer; cdecl; export;
-var s : string;
-
-   ArgsString: UTF8String;
-  ResultString: UTF8String;
-  StrLen: Integer;
-
-
+function CnvArg(Prm:PChar; out FlaOffs:integer; out Err:boolean):string;
+const Spr = #$1F;
+var fq : PChar = nil;
+    lprm : PChar = nil;
+    acnt : integer = 1;
+    L : SizeInt;
+    lq, p, d : PChar;
+    c : char;
 begin
-  Result := 0;
-
-  ResStruct^.DataType:=0;
-  if Arg=nil then exit;
-  s:=SysUtils.StrPas(Arg); // s может оказаться пустой      Result^.Value.AsPChar := StrNew(PChar(s));
-
-  ResultString := 'Lazarus получил: ' + s;
-  StrLen := Length(ResultString) + 1;
-  ResStruct^.AsPChar := AllocMem(StrLen);
-
-  Move(PByte(ResultString), ResStruct^.AsPChar, StrLen);
-  ResStruct^.DataType := 3;
-
-
+  Err:=true;
+  p:=Prm;
+  L:=StrLen(p);
+  if L=0 then Exit('no parameters');
+  SetLength(Result, L);
+  d:=PChar(Result);
+  repeat
+    c:=p^;
+    case c of
+      #0, Spr : begin
+                  if (acnt and 1)<>0 then begin
+                    if fq=nil then Exit('invalid type of parameter '+IntToStr(acnt));
+                    fq^:=#$20;
+                    lq^:=#$20;
+                  end;
+                  if c=#0 then break;
+                  if (acnt and 1)=0 then c:=',' else c:='=';
+                  fq:=nil;
+                  lprm:=p;
+                  inc(acnt);
+                end;
+      '"'     : begin
+                  if fq=nil then fq:=d;
+                  lq:=d;
+                end;
+      ','     : if ((acnt and 1)=0) and (fq=nil) then c:='.';
+    end;
+    d^:=c;
+    inc(d);
+    inc(p);
+  until false;
+  if (acnt and 1)=0 then Exit('number of parameters must be odd');
+  FlaOffs:=-1;
+  if lprm<>nil then FlaOffs:=lprm-Prm;
+  Err:=false;
 end;
 
-function elmo_val_py(Arg:PChar; ResStruct:PDataRec):integer; cdecl; export;
+procedure RetString(S:string; P:PDataRec);
+var L : SizeInt;
+begin
+  L:=length(S)+1;
+  P^.AsPChar:=GetMem(L);
+  move(PByte(S), P^.AsPChar, L);
+  P^.DataType:=3;
+end;
+
+function elmo_str_py(Ptr:PChar; DataRec:PDataRec):integer; cdecl; export;
+var fla : string;
+    ofs : integer;
+    err : boolean;
+begin
+  DataRec^.DataType:=0;
+  Result:=0;
+  fla:=CnvArg(Ptr, ofs, err);
+  if err then begin
+    RetString(fla, DataRec);
+    exit;
+  end;
+
+  RetString(fla, DataRec);
+end;
+
+function elmo_val_py(Ptr:PChar; ResStruct:PDataRec):integer; cdecl; export;
 var s : string;
                           tt : pointer;
   StrLen: Integer;
@@ -60,8 +104,8 @@ begin
   Result := 0;
 
   ResStruct^.DataType:=0;
-  if Arg=nil then exit;
-  s:=SysUtils.StrPas(Arg); // s может оказаться пустой      Result^.Value.AsPChar := StrNew(PChar(s));
+  if Ptr=nil then exit;
+  s:=SysUtils.StrPas(Ptr); // s может оказаться пустой      Result^.Value.AsPChar := StrNew(PChar(s));
 
   s := 'Lazarus получил:' + s;
 
@@ -82,8 +126,8 @@ end;
 
 function elmo_free_str(Ptr:PChar):integer; cdecl; export;
 begin
-  Result:=0;
   FreeMem(Ptr);
+  Result:=0;
 end;
 
 exports
