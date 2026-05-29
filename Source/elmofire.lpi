@@ -57,6 +57,7 @@
       </SyntaxOptions>
     </Parsing>
     <CodeGeneration>
+      <SmartLinkUnit Value="True"/>
       <RelocatableUnit Value="True"/>
       <Optimizations>
         <OptimizationLevel Value="3"/>
@@ -67,6 +68,7 @@
         <GenerateDebugInfo Value="False"/>
         <RunWithoutDebug Value="True"/>
         <UseLineInfoUnit Value="False"/>
+        <StripSymbols Value="True"/>
       </Debugging>
       <LinkSmart Value="True"/>
       <Options>

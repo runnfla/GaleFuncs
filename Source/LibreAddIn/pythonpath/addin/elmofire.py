@@ -125,7 +125,7 @@ def call_runfla(func_id, flat_args):
         return ""
 
     except Exception as err:
-        return f"ELMOFIRE ERROR: {str(err)}"
+        return f"ElmoFire Add-In ERROR: {str(err)}"
 
 class ElmoFire(unohelper.Base, XElmoFire, XAddIn, XServiceName, XLocalizable):
     def __init__(self, ctx):

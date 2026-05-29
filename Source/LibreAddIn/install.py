@@ -3,10 +3,10 @@ import uno
 import unohelper
 
 if sys.platform != "win32" and not sys.platform.startswith("linux"):
-    raise RuntimeError(f"ELMOFIRE ERROR: Operating system {sys.platform} is not supported")
+    raise RuntimeError(f"ElmoFire Add-In ERROR: Operating system {sys.platform} is not supported")
 
 if sys.maxsize <= 2**32:
-    raise RuntimeError("ELMOFIRE ERROR: Only 64-bit systems are supported")
+    raise RuntimeError("ElmoFire Add-In ERROR: Only 64-bit systems are supported")
 
 def createInstance(ctx):
     import addin.elmofire
