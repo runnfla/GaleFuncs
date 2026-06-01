@@ -1,7 +1,7 @@
 #*****************************************************
 #  ElmoFire LibreOffice Add-In
 #  Version 0.1.a
-#  Released at 28.05.2026
+#  Rev. 1.06.2026
 
 #  Author: Alexander Torubarov
 #  Contact: runfla@yandex.com
@@ -81,8 +81,8 @@ def call_runfla(func_id, flat_args):
             lib.elmo_val_py.argtypes = [ctypes.c_char_p, ctypes.POINTER(DataRec)]
             lib.elmo_val_py.restype = ctypes.c_int
 
-            lib.elmo_free_str.argtypes = [ctypes.c_char_p]
-            lib.elmo_free_str.restype = ctypes.c_int
+            lib.elmo_free_py.argtypes = [ctypes.c_char_p]
+            lib.elmo_free_py.restype = ctypes.c_int
 
         # mapping function ID to the specific library method
         if func_id == 0:
@@ -116,7 +116,7 @@ def call_runfla(func_id, flat_args):
             finally:
                 # ensuring that a library crash won't close LibreCalc
                 try:
-                    lib.elmo_free_str(ptr)
+                    lib.elmo_free_py(ptr)
                 except Exception:
                     pass
 

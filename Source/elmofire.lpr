@@ -1,3 +1,24 @@
+//*****************************************************
+//  ElmoFire LibreOffice Add-In
+//  Version 0.1.a
+//  Rev. 1.05.2026
+
+//  Author: Alexander Torubarov
+//  Contact: runfla@yandex.com
+
+//  Filename: elmofire.lpr
+//  Source Code: Object Pascal / FreePascal
+//  Compatible: Lazarus 4.2 x64 win10
+
+//  Copyright (C) 2026 Alexander Torubarov
+//  Licensed under the MIT License.
+//  See the LICENSE file in the project root
+//  or a copy available at https://opensource.org
+//  for full license information.
+//*****************************************************
+
+// TODO -oElmo -cRev.2026.06.01:
+
 library elmofire;
 
 {$mode objfpc}{$H+}
@@ -93,7 +114,6 @@ begin
                      if fq=nil then fq:=d;
                      lq:=d;
                    end;
-      ','        : if ((acnt and 1)=0) and (fq=nil) then c:='.';
     end;
     d^:=c;
     inc(d);
@@ -124,7 +144,7 @@ begin
   SetExceptionMask(mask);
   with err do if Code<>OK then begin
     fla:=ElmoErr+' at formula position '+IntToStr(Position-ofs)+': '+RunFlaErrorMsg[Code].ErrMsg;
-    if length(Value)>0 then fla:=fla+' (inf "'+Value+'")';
+    // if length(Value)>0 then fla:=fla+' (inf "'+Value+'")';
   end;
   RetStr(fla, DataRec);
 end;
@@ -149,7 +169,7 @@ begin
   SetExceptionMask(mask);
   with err do if Code<>OK then begin
     fla:=ElmoErr+' at formula position '+IntToStr(Position-ofs)+': '+RunFlaErrorMsg[Code].ErrMsg;
-    if length(Value)>0 then fla:=fla+' (inf "'+Value+'")';
+    // if length(Value)>0 then fla:=fla+' (inf "'+Value+'")';
     RetStr(fla, DataRec);
   end;
   with DataRec^ do case PVarData(@vrt)^.vtype of
@@ -169,16 +189,34 @@ begin
   end;
 end;
 
-function elmo_free_str(Ptr:PChar):integer; cdecl; export;
+function elmo_free_py(Ptr:PChar):integer; cdecl; export;       //DONE -oElmo -cRev.2026.06.01: Func elmo_free_py
 begin
   FreeMem(Ptr);
   Result:=0;
 end;
 
+function elmo_str_vba(Ptr:PChar; DataRec:PDataRec):integer; stdcall; export;
+begin                                                          //DONE -oElmo -cRev.2026.06.01: Func elmo_str_vba
+  Result:=elmo_str_py(Ptr, DataRec);
+end;
+
+function elmo_val_vba(Ptr:PChar; DataRec:PDataRec):integer; stdcall; export;
+begin                                                          //DONE -oElmo -cRev.2026.06.01: Func elmo_val_vba
+  Result:=elmo_val_py(Ptr, DataRec);
+end;
+
+function elmo_free_vba(Ptr:PChar):integer; stdcall; export;    //DONE -oElmo -cRev.2026.06.01: Func elmo_free_vba
+begin
+  Result:=elmo_free_py(Ptr);
+end;
+
 exports
-  elmo_str_py,
-  elmo_val_py,
-  elmo_free_str;
+  elmo_str_py name 'elmo_str_py',
+  elmo_val_py name 'elmo_val_py',
+  elmo_free_py name 'elmo_free_py',
+  elmo_str_vba name 'elmo_str_vba',
+  elmo_val_vba name 'elmo_val_vba',
+  elmo_free_vba name 'elmo_free_vba';
 
 begin
   ReturnNilIfGrowHeapFails:=true;

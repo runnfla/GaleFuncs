@@ -5,7 +5,7 @@
              xmlns:xlink="http://www.w3.org/1999/xlink">
 
 <identifier value="addin.elmofire" />
-<version value="0.1.a" />
+<version value="0.1.b" />
 
 <display-name>
   <value xml:lang="en">ElmoFire Add-In</value>
