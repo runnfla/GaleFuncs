@@ -8,8 +8,9 @@
       <Unit>
         <Filename Value="elmofire.lpr"/>
         <IsPartOfProject Value="True"/>
-        <TopLine Value="10"/>
-        <CursorPos X="34" Y="215"/>
+        <IsVisibleTab Value="True"/>
+        <TopLine Value="15"/>
+        <CursorPos X="48" Y="26"/>
         <UsageCount Value="97"/>
         <Loaded Value="True"/>
       </Unit>
@@ -182,7 +183,7 @@
       <Unit>
         <Filename Value="LibreAddIn\pythonpath\addin\elmofire.py"/>
         <EditorIndex Value="1"/>
-        <CursorPos X="25" Y="3"/>
+        <CursorPos X="17" Y="3"/>
         <UsageCount Value="33"/>
         <Loaded Value="True"/>
         <DefaultSyntaxHighlighter Value="Python"/>
@@ -196,9 +197,8 @@
       </Unit>
       <Unit>
         <Filename Value="LibreAddIn\description.xml"/>
-        <IsVisibleTab Value="True"/>
         <EditorIndex Value="2"/>
-        <CursorPos X="22" Y="8"/>
+        <CursorPos X="47" Y="7"/>
         <UsageCount Value="32"/>
         <Loaded Value="True"/>
         <DefaultSyntaxHighlighter Value="XML"/>
@@ -315,8 +315,16 @@
         <CursorPos X="54" Y="87"/>
         <UsageCount Value="11"/>
       </Unit>
+      <Unit>
+        <Filename Value="ExcelAddIn\ElmoFire.bas"/>
+        <EditorIndex Value="8"/>
+        <CursorPos X="80" Y="9"/>
+        <UsageCount Value="10"/>
+        <Loaded Value="True"/>
+        <DefaultSyntaxHighlighter Value="None"/>
+      </Unit>
     </Units>
-    <JumpHistory HistoryIndex="24">
+    <JumpHistory HistoryIndex="26">
       <Position>
         <Filename Value="elmofire.lpr"/>
         <Caret Line="147" Column="27" TopLine="134"/>
@@ -416,6 +424,13 @@
       <Position>
         <Filename Value="elmofire.lpr"/>
         <Caret Line="20" Column="32" TopLine="13"/>
+      </Position>
+      <Position>
+        <Filename Value="ExcelAddIn\ElmoFire.bas"/>
+      </Position>
+      <Position>
+        <Filename Value="elmofire.lpr"/>
+        <Caret Line="225" TopLine="200"/>
       </Position>
     </JumpHistory>
     <RunParams>

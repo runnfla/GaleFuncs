@@ -1,6 +1,6 @@
 #*****************************************************
 #  ElmoFire LibreOffice Add-In
-#  Version 0.1.a
+#  Version 0.1.b
 #  Rev. 1.06.2026
 
 #  Author: Alexander Torubarov
