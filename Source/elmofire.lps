@@ -8,9 +8,8 @@
       <Unit>
         <Filename Value="elmofire.lpr"/>
         <IsPartOfProject Value="True"/>
-        <IsVisibleTab Value="True"/>
         <CursorPos X="48" Y="26"/>
-        <UsageCount Value="97"/>
+        <UsageCount Value="98"/>
         <Loaded Value="True"/>
       </Unit>
       <Unit>
@@ -18,14 +17,14 @@
         <IsPartOfProject Value="True"/>
         <UnitName Value="RunFormula"/>
         <EditorIndex Value="-1"/>
-        <UsageCount Value="97"/>
+        <UsageCount Value="98"/>
       </Unit>
       <Unit>
         <Filename Value="RunFormula\runformula.pas"/>
         <IsPartOfProject Value="True"/>
         <UnitName Value="RunFormula"/>
         <EditorIndex Value="-1"/>
-        <UsageCount Value="66"/>
+        <UsageCount Value="67"/>
       </Unit>
       <Unit>
         <Filename Value="..\TEST\META-INF\manifest.xml"/>
@@ -316,14 +315,16 @@
       </Unit>
       <Unit>
         <Filename Value="ExcelAddIn\ElmoFire.bas"/>
+        <IsVisibleTab Value="True"/>
         <EditorIndex Value="8"/>
-        <CursorPos X="80" Y="9"/>
+        <TopLine Value="66"/>
+        <CursorPos X="31" Y="75"/>
         <UsageCount Value="10"/>
         <Loaded Value="True"/>
         <DefaultSyntaxHighlighter Value="None"/>
       </Unit>
     </Units>
-    <JumpHistory HistoryIndex="26">
+    <JumpHistory HistoryIndex="28">
       <Position>
         <Filename Value="elmofire.lpr"/>
         <Caret Line="147" Column="27" TopLine="134"/>
@@ -430,6 +431,14 @@
       <Position>
         <Filename Value="elmofire.lpr"/>
         <Caret Line="225" TopLine="200"/>
+      </Position>
+      <Position>
+        <Filename Value="ExcelAddIn\ElmoFire.bas"/>
+        <Caret Line="2" Column="8"/>
+      </Position>
+      <Position>
+        <Filename Value="ExcelAddIn\ElmoFire.bas"/>
+        <Caret Line="167" Column="25" TopLine="153"/>
       </Position>
     </JumpHistory>
     <RunParams>
