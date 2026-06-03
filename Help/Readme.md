@@ -1,14 +1,13 @@
-ElmoFire Add-In — это расширение для LibreOffice Calc и MS Excel на базе скриптового
-движка RunFormula. Оно позволяет вычислять математические выражения и формулы
-с обработкой физических размерностей без создания макросов. Выражения и небольшие скрипты
-записываются непосредственно в ячейках таблицы. Синтаксис RunFormula поддерживается
-в полном объеме.
+# 🧮 ElmoFire Add-In
 
-ElmoFire позволяет, в том числе:
-- выполнять вычисления с комплексными числами и интервалами;
-- контролировать физические размерности на каждом этапе расчета;
-- автоматически рассчитывать размерность итогового результата;
-- автоматически конвертировать значения из одной системы единиц в другую.
+The **ElmoFire Add-In** is an extension for LibreOffice Calc and MS Excel powered by the **RunFormula** scripting engine. It enables the evaluation of mathematical expressions and formulas with built-in physical unit awareness, completely eliminating the need to create macros. Expressions and short scripts are written directly inside the spreadsheet cells. The RunFormula syntax is supported in its entirety.
+
+ElmoFire allows you to, among other things:
+* **Perform computations** with complex numbers and intervals.
+* **Validate physical dimensions** at every stage of the calculation.
+* **Automatically determine** the unit of measurement for the final result.
+* **Convert values seamlessly** from one unit system to another on the fly.
+
 
 Как установить ElmoFire.
 
