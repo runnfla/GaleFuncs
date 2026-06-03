@@ -1,12 +1,12 @@
 # ElmoFire Add-In
 
-The ElmoFire Add-In is an extension for LibreOffice Calc and Microsoft Excel powered by the [RunFormula](https://github.com/runnfla/RunFormula) scripting engine. It enables the evaluation of mathematical expressions and formulas with built-in physical unit awareness, completely eliminating the need to create macros. Expressions and short scripts are written directly inside the spreadsheet cells. The RunFormula syntax is supported in its entirety.
+The ElmoFire Add-In is an extension for LibreOffice Calc and Microsoft Excel powered by the [RunFormula](https://github.com/runnfla/RunFormula) scripting engine. It allows you to evaluate mathematical expressions and formulas with physical unit awareness, completely eliminating the need to create macros. Expressions and short scripts are written directly inside the spreadsheet cells. The RunFormula syntax is fully supported.
 
-ElmoFire allows you to, among other things:
-* **Perform computations** with complex numbers and intervals.
-* **Validate physical dimensions** at every stage of the calculation.
-* **Automatically determine** the unit of measurement for the final result.
-* **Convert values seamlessly** from one unit system to another on the fly.
+With ElmoFire, you can:
+* Perform computations with **complex numbers and intervals**
+* **Validate physical dimensions** at every stage of the calculation
+* **Automatically determine** the unit of measurement for the final result
+* **Convert values seamlessly** from one unit system to another on the fly
 
 
 Как установить ElmoFire.
@@ -34,3 +34,10 @@ MS Excel x64 для Windows.
    * В открывшемся окне нажмите кнопку **Обзор...** и укажите путь к распакованному файлу `ElmoFire.xlam`.
    * Убедитесь, что в списке появилась надстройка `ElmoFire` и напротив нее стоит галочка. Нажмите **OK**.
 
+--\
+**Author:** Alexander Torubarov\
+**Contact:** runfla@yandex.com
+
+Copyright (C) 2026 Alexander Torubarov\
+Licensed under the MIT License.\
+See the `LICENSE` file in the project root or a copy available at [opensource.org](https://opensource.org) for full license information.
