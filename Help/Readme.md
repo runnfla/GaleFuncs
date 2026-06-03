@@ -9,9 +9,9 @@ With ElmoFire, you can:
 * **Convert values** from one unit system to another
 
 **Compatibility**\
-\  - LibreOffice Calc 64-bit on MS Windows\
-\  - LibreOffice Calc 64-bit on Linux\
-\  - Microsoft Excel 64-bit on MS Windows
+\- LibreOffice Calc 64-bit on MS Windows\
+\- LibreOffice Calc 64-bit on Linux\
+\- Microsoft Excel 64-bit on MS Windows
 
 Установка в LibreOffice Calc:
 1. Загрузите соответсвующий .oxt файл из каталога Add-In
