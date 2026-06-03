@@ -13,12 +13,12 @@ With ElmoFire, you can:
 \- LibreOffice Calc 64-bit on Linux\
 \- Microsoft Excel 64-bit on MS Windows
 
-Установка в LibreOffice Calc:
-1. Загрузите соответсвующий .oxt файл из каталога Add-In
-2. В Меню выберите Tools --> Extensions
-3. В открывшемся окне нажмите кнопку Add
-4. Укажите путь к скачанному файлу `ElmoFire.oxt` и нажмите Открыть
-5. Перезапустите LibreOffice Calc, чтобы изменения вступили в силу
+**Installation in LibreOffice Calc:**
+1\. Download the corresponding .oxt file from the [Add-In](https://github.com/runnfla/ElmoFire/tree/main/Add-In/LibreOffice%20Calc) directory.
+2\. From the menu, select Tools \-\-> Extensions.
+3\. In the window that opens, click the Add button.
+4\. Select the downloaded .oxt file and click Open.
+5\. Restart LibreOffice Calc for the changes to take effect.
 
 Установка в Microsoft Excel:
 1. Скачайте архив ElmoFire Excel.zip со страницы [Releases](ссылка_на_рел
