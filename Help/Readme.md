@@ -8,11 +8,10 @@ With ElmoFire, you can:
 * **Automatically determine** the unit of measurement for the final result
 * **Convert values** from one unit system to another
 
-
-Как установить ElmoFire.
-
-Поддерживаются LibreOffice Calc x64 для операционных систем MS Windows и Linux и
-MS Excel x64 для Windows.
+### Compatibility
+ - LibreOffice Calc 64-bit on MS Windows
+ - LibreOffice Calc 64-bit on Linux
+ - Microsoft Excel 64-bit on MS Windows
 
 Установка в LibreOffice Calc:
 1. Загрузите соответсвующий .oxt файл из каталога Add-In
