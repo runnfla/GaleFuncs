@@ -13,7 +13,7 @@ With ElmoFire, you can:
 \- LibreOffice Calc 64-bit on Linux\
 \- Microsoft Excel 64-bit on MS Windows
 
-**Installation in LibreOffice Calc:**\
+**Installation in LibreOffice Calc**\
 1\. Download the corresponding .oxt file from the [Add-In](https://github.com/runnfla/ElmoFire/tree/main/Add-In/LibreOffice%20Calc) directory\
 2\. From the menu, select Tools \-\-> Extensions\
 3\. In the window that opens, click the Add button\
