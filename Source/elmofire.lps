@@ -9,7 +9,7 @@
         <Filename Value="elmofire.lpr"/>
         <IsPartOfProject Value="True"/>
         <CursorPos X="48" Y="26"/>
-        <UsageCount Value="98"/>
+        <UsageCount Value="101"/>
         <Loaded Value="True"/>
       </Unit>
       <Unit>
@@ -17,14 +17,14 @@
         <IsPartOfProject Value="True"/>
         <UnitName Value="RunFormula"/>
         <EditorIndex Value="-1"/>
-        <UsageCount Value="98"/>
+        <UsageCount Value="101"/>
       </Unit>
       <Unit>
         <Filename Value="RunFormula\runformula.pas"/>
         <IsPartOfProject Value="True"/>
         <UnitName Value="RunFormula"/>
         <EditorIndex Value="-1"/>
-        <UsageCount Value="67"/>
+        <UsageCount Value="70"/>
       </Unit>
       <Unit>
         <Filename Value="..\TEST\META-INF\manifest.xml"/>
@@ -182,7 +182,7 @@
         <Filename Value="LibreAddIn\pythonpath\addin\elmofire.py"/>
         <EditorIndex Value="1"/>
         <CursorPos X="17" Y="3"/>
-        <UsageCount Value="33"/>
+        <UsageCount Value="34"/>
         <Loaded Value="True"/>
         <DefaultSyntaxHighlighter Value="Python"/>
       </Unit>
@@ -197,7 +197,7 @@
         <Filename Value="LibreAddIn\description.xml"/>
         <EditorIndex Value="2"/>
         <CursorPos X="47" Y="7"/>
-        <UsageCount Value="32"/>
+        <UsageCount Value="33"/>
         <Loaded Value="True"/>
         <DefaultSyntaxHighlighter Value="XML"/>
       </Unit>
@@ -205,7 +205,7 @@
         <Filename Value="LibreAddIn\idl\XElmoFire.idl"/>
         <EditorIndex Value="4"/>
         <CursorPos X="16" Y="3"/>
-        <UsageCount Value="32"/>
+        <UsageCount Value="33"/>
         <Loaded Value="True"/>
         <DefaultSyntaxHighlighter Value="None"/>
       </Unit>
@@ -213,7 +213,7 @@
         <Filename Value="LibreAddIn\META-INF\manifest.xml"/>
         <EditorIndex Value="5"/>
         <CursorPos X="21" Y="6"/>
-        <UsageCount Value="32"/>
+        <UsageCount Value="33"/>
         <Loaded Value="True"/>
         <DefaultSyntaxHighlighter Value="XML"/>
       </Unit>
@@ -221,7 +221,7 @@
         <Filename Value="LibreAddIn\install.py"/>
         <EditorIndex Value="6"/>
         <CursorPos Y="17"/>
-        <UsageCount Value="32"/>
+        <UsageCount Value="33"/>
         <Loaded Value="True"/>
         <DefaultSyntaxHighlighter Value="Python"/>
       </Unit>
@@ -242,14 +242,14 @@
         <Filename Value="LibreAddIn\desc.txt"/>
         <EditorIndex Value="3"/>
         <CursorPos X="64"/>
-        <UsageCount Value="20"/>
+        <UsageCount Value="21"/>
         <Loaded Value="True"/>
         <DefaultSyntaxHighlighter Value="Text"/>
       </Unit>
       <Unit>
         <Filename Value="LibreAddIn\compile_idl.bat"/>
         <EditorIndex Value="7"/>
-        <UsageCount Value="20"/>
+        <UsageCount Value="21"/>
         <Loaded Value="True"/>
         <DefaultSyntaxHighlighter Value="Bat"/>
       </Unit>
@@ -317,11 +317,25 @@
         <Filename Value="ExcelAddIn\ElmoFire.bas"/>
         <IsVisibleTab Value="True"/>
         <EditorIndex Value="8"/>
-        <TopLine Value="66"/>
         <CursorPos X="31" Y="75"/>
-        <UsageCount Value="10"/>
+        <UsageCount Value="11"/>
         <Loaded Value="True"/>
         <DefaultSyntaxHighlighter Value="None"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\Readme.txt"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos Y="38"/>
+        <UsageCount Value="10"/>
+        <DefaultSyntaxHighlighter Value="Text"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\Help\Rus\runflahelp.txt"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="7"/>
+        <CursorPos X="30" Y="42"/>
+        <UsageCount Value="10"/>
+        <DefaultSyntaxHighlighter Value="Text"/>
       </Unit>
     </Units>
     <JumpHistory HistoryIndex="28">
