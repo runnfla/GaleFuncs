@@ -6,7 +6,7 @@ With ElmoFire, you can:
 * Perform computations with **complex numbers and intervals**
 * **Validate physical dimensions** at every stage of the calculation
 * **Automatically determine** the unit of measurement for the final result
-* **Convert values seamlessly** from one unit system to another on the fly
+* **Convert values** from one unit system to another
 
 
 Как установить ElmoFire.
