@@ -29,8 +29,23 @@ With ElmoFire, you can:
 7\. In the **Add-Ins** dialog box, click **Browse**, select the extracted `ElmoFire Excel.xlam` file and click **OK**\
 8\. Make sure that the **ElmoFire Excel** add-in appears in the list and is checked and click **OK**
 
-Как использовать
-После установки in spreadsheet появятся две новых функции ELMOSTR() и ELMOVAL(). Параметры функций одинаковые. Результат ELMOSTR() - текстовая строка, содержащая результат вычисления, при необходимости, с указанием размерности. Результат ELMOVAL() - безразмерное число (или строка), пригодное для дальнейших высимлений.
+**How to use**
+After installing the add‑in, two new functions will appear in the spreadsheet: ELMOSTR() and ELMOVAL(). They have the same parameters.\
+The ELMOSTR() function returns a text string containing the calculation result, including units of measurement if applicable.\
+The ELMOVAL() function returns a dimensionless number (or string) suitable for further calculations\
+Parameters are passed in the following order: first, the variables used in the formula and their values are specified in pairs, followed by the formula itself at the end.\
+
+ELMOSTR/ELMOVAL([variable1, value1,]...[variableN, valueN,] formula)
+
+The number of variables is unlimited. Variables may be omitted (i.e., you can pass just the formula). All parameters are separated by commas. If the text of a variable, value, or formula is provided directly in the parameters of the ELMOSTR/ELMOVAL functions, it must be enclosed in double quotation marks.
+
+
+
+
+
+
+
+
 
 
 
