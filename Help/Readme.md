@@ -50,7 +50,7 @@ The number of variables is unlimited. Variables may be omitted (i.e., you can pa
 3 |   2.2     |     mV       |   0.1`kOhm`  | =ELMOSTR("U", A3, "UX", B3, "R", C3, $E$2) |                          |
   +-----------+--------------+--------------+--------------------------------------------+---------------------------+
 ```
-
+See the corresponding help topics for the RunFormula syntacs at [Help/Eng/runflahelp-eng.txt](https://github.com/runnfla/ElmoFire/blob/main/Help/Eng/runflahelp-eng.txt) ([Help/Rus/runflahelp.txt](https://github.com/runnfla/ElmoFire/blob/main/Help/Rus/runflahelp.txt) on russian).
 
 
 
