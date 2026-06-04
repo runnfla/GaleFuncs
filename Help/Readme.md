@@ -39,25 +39,14 @@ Parameters are passed in the following order: first, the variables used in the f
 
 The number of variables is unlimited. Variables may be omitted (i.e., you can pass just the formula). All parameters are separated by commas. If the text of a variable, value, or formula is provided directly in the parameters of the ELMOSTR/ELMOVAL functions, it must be enclosed in double quotation marks.
 
-
-
-
-
-
-
-
-
-
-
-
-```text
-       A             B                C               D                                         E
-  +-----------+--------------+--------------+------------------------------------------------------------------------+
-1 |  Voltage  |   U Units    |  Resistance  |        Power                               |    Formula                |
-  +-----------+--------------+--------------+--------------------------------------------+---------------------------+
-2 |   0.22    |     kV       |    20`Ohm`   | =ELMOSTR("U", A2, "UX", B2, "R", C2, $E$2) |  qty(U, Ux)**2/value(R)   |
-  +-----------+--------------+--------------+--------------------------------------------+---------------------------+
-3 |   2.2    |      mV       |    0.1`kOhm` | =ELMOSTR("U", A3, "UX", B3, "R", C3, $E$2) |                           |
+**Example**\ ```text
+       A             B                C               D                                           E
+  +-----------+--------------+--------------+-----------------------------------------------------------------------+
+1 |  Voltage  |   U Units    |  Resistance  |        Power                               |      Formula             |
+  +-----------+--------------+--------------+--------------------------------------------+--------------------------+
+2 |   0.22    |     kV       |    20`Ohm`   | =ELMOSTR("U", A2, "UX", B2, "R", C2, $E$2) |  qty(U, Ux)**2/value(R)  |
+  +-----------+--------------+--------------+--------------------------------------------+--------------------------+
+3 |   2.2     |     mV       |   0.1`kOhm`  | =ELMOSTR("U", A3, "UX", B3, "R", C3, $E$2) |                          |
   +-----------+--------------+--------------+--------------------------------------------+---------------------------+
 ```
 
