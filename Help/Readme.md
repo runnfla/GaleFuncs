@@ -51,12 +51,6 @@ The number of variables is unlimited. Variables may be omitted (i.e., you can pa
   +-----------+--------------+--------------+--------------------------------------------+---------------------------+
 ```
 For details on the RunFormula syntax, refer to [Help/Eng/runflahelp-eng.txt](https://github.com/runnfla/ElmoFire/blob/main/Help/Eng/runflahelp-eng.txt) ([Help/Rus/runflahelp.txt](https://github.com/runnfla/ElmoFire/blob/main/Help/Rus/runflahelp.txt) in Russian).
-
-
-
-
-
-
 --\
 **Author:** Alexander Torubarov\
 **Contact:** runfla@yandex.com
