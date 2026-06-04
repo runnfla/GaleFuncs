@@ -15,7 +15,7 @@ With ElmoFire, you can:
 **Installation in LibreOffice Calc**\
 1\. Download the corresponding `.oxt` file from the [Add-In](https://github.com/runnfla/ElmoFire/tree/main/Add-In/LibreOffice%20Calc) directory\
 2\. In LibreOffice Calc, go to **Tools \-\-> Extensions**\
-3\. In the **Extension** manager window, click the **Add** button\
+3\. In the **Extensions** manager window, click the **Add** button\
 4\. Select the downloaded `.oxt` file and click **Open**\
 5\. Restart LibreOffice Calc for the changes to take effect
 
