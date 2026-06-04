@@ -15,12 +15,13 @@ With ElmoFire, you can:
 
 **Installation in LibreOffice Calc**\
 1\. Download the corresponding .oxt file from the [Add-In](https://github.com/runnfla/ElmoFire/tree/main/Add-In/LibreOffice%20Calc) directory\
-2\. From the menu, select Tools \-\-> Extensions\
+2\. From the Calc menu, select Tools \-\-> Extensions\
 3\. In the window that opens, click the Add button\
 4\. Select the downloaded .oxt file and click Open\
 5\. Restart LibreOffice Calc for the changes to take effect
 
-Установка в Microsoft Excel:
+**Installation in Microsoft Excel**\
+
 1. Скачайте архив ElmoFire Excel.zip со страницы [Releases](ссылка_на_рел
 2. Распакуйте его содержимое в любую удобную и постоянную папку на вашем компьютере
 (например, `C:\Addins\ElmoFire\`)
