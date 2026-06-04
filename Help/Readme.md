@@ -30,10 +30,10 @@ With ElmoFire, you can:
 8\. Make sure that the **ElmoFire Excel** add-in appears in the list and is checked and click **OK**
 
 **How to use**\
-After installing the add‑in, two new functions will appear in the spreadsheet: ELMOSTR() and ELMOVAL(). They have the same parameters.\
+After installing the add‑in, two new functions will become available in your spreadsheet: ELMOSTR() and ELMOVAL(). They have the same parameters.\
 The ELMOSTR() function returns a text string containing the calculation result, including units of measurement if applicable.\
-The ELMOVAL() function returns a dimensionless number (or string) suitable for further calculations.\
-Parameters are passed in the following order: first, the variables used in the formula and their values are specified in pairs, followed by the formula (expression or script) itself at the end.\
+The ELMOVAL() function returns a raw, dimensionless number (or string) suitable for further calculations.\
+Parameters are passed in the following order: first, the variables used in the formula and their values are specified in pairs, followed by the formula (expression or script) itself at the end.
 
 `ELMOSTR/ELMOVAL([variable1, value1,]...[variableN, valueN,] formula)`
 
