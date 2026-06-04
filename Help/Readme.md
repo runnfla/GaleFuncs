@@ -41,14 +41,14 @@ The number of variables is unlimited. Variables may be omitted (i.e., you can pa
 
 **Example**
 ```text
-       A             B                C               D                                           E
+       A             B                C                D                                          E
   +-----------+--------------+--------------+-----------------------------------------------------------------------+
 1 |  Voltage  |   U Units    |  Resistance  |        Power                               |      Formula             |
   +-----------+--------------+--------------+--------------------------------------------+--------------------------+
 2 |   0.22    |     kV       |    20`Ohm`   | =ELMOSTR("U", A2, "UX", B2, "R", C2, $E$2) |  qty(U, Ux)**2/value(R)  |
   +-----------+--------------+--------------+--------------------------------------------+--------------------------+
 3 |   2.2     |     mV       |   0.1`kOhm`  | =ELMOSTR("U", A3, "UX", B3, "R", C3, $E$2) |                          |
-  +-----------+--------------+--------------+--------------------------------------------+---------------------------+
+  +-----------+--------------+--------------+--------------------------------------------+--------------------------+
 ```
 For details on the RunFormula syntax, refer to [Help/Eng/runflahelp-eng.txt](https://github.com/runnfla/ElmoFire/blob/main/Help/Eng/runflahelp-eng.txt) ([Help/Rus/runflahelp.txt](https://github.com/runnfla/ElmoFire/blob/main/Help/Rus/runflahelp.txt) in Russian).
 
