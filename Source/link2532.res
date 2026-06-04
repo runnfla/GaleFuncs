@@ -91,14 +91,14 @@ SEARCH_DIR("C:\lazarus\fpc\3.2.2\units\x86_64-win64\")
 SEARCH_DIR("C:\lazarus\fpc\3.2.2\bin\x86_64-win64\")
 INPUT(
 C:\lazarus\fpc\3.2.2\units\x86_64-win64\rtl\sysinit.o
-G:\Projects\RunFormula\GitHub\ElmoFire\Source\lib\x86_64-win64\elmofire.o
+G:\Projects\RunFormula\GitHub\StElmoFire\Source\lib\x86_64-win64\stelmofire.o
 C:\lazarus\fpc\3.2.2\units\x86_64-win64\rtl\system.o
 C:\lazarus\fpc\3.2.2\units\x86_64-win64\rtl\fpintres.o
 C:\lazarus\fpc\3.2.2\units\x86_64-win64\rtl\objpas.o
 C:\lazarus\fpc\3.2.2\units\x86_64-win64\rtl\cmem.o
 C:\lazarus\fpc\3.2.2\units\x86_64-win64\rtl\sysutils.o
 C:\lazarus\fpc\3.2.2\units\x86_64-win64\rtl\classes.o
-G:\Projects\RunFormula\GitHub\ElmoFire\Source\lib\x86_64-win64\runformula.o
+G:\Projects\RunFormula\GitHub\StElmoFire\Source\lib\x86_64-win64\runformula.o
 C:\lazarus\fpc\3.2.2\units\x86_64-win64\rtl\windows.o
 C:\lazarus\fpc\3.2.2\units\x86_64-win64\rtl\sysconst.o
 C:\lazarus\fpc\3.2.2\units\x86_64-win64\rtl\windirs.o

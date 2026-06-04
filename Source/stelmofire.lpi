@@ -25,7 +25,7 @@
     </RunParams>
     <Units>
       <Unit>
-        <Filename Value="elmofire.lpr"/>
+        <Filename Value="stelmofire.lpr"/>
         <IsPartOfProject Value="True"/>
         <UnitName Value="stelmofire"/>
       </Unit>

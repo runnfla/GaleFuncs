@@ -6,13 +6,11 @@
     <BuildModes Active="Default"/>
     <Units>
       <Unit>
-        <Filename Value="elmofire.lpr"/>
+        <Filename Value="stelmofire.lpr"/>
         <IsPartOfProject Value="True"/>
-        <UnitName Value="stelmofire"/>
-        <EditorIndex Value="-1"/>
-        <TopLine Value="19"/>
         <CursorPos X="24" Y="40"/>
         <UsageCount Value="101"/>
+        <Loaded Value="True"/>
       </Unit>
       <Unit>
         <Filename Value="..\RunFormula\runformula.pas"/>
@@ -43,7 +41,7 @@
         <DefaultSyntaxHighlighter Value="XML"/>
       </Unit>
       <Unit>
-        <Filename Value="..\TEST\elmofire.py"/>
+        <Filename Value="..\TEST\stelmofire.py"/>
         <EditorIndex Value="-1"/>
         <CursorPos Y="50"/>
         <UsageCount Value="13"/>
@@ -57,7 +55,7 @@
         <DefaultSyntaxHighlighter Value="None"/>
       </Unit>
       <Unit>
-        <Filename Value="..\TEST\elmofire.xcu"/>
+        <Filename Value="..\TEST\stelmofire.xcu"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="3"/>
         <CursorPos X="24" Y="29"/>
@@ -65,7 +63,7 @@
         <DefaultSyntaxHighlighter Value="None"/>
       </Unit>
       <Unit>
-        <Filename Value="..\TEST\registry\data\org\openoffice\Office\elmofire.xcu"/>
+        <Filename Value="..\TEST\registry\data\org\openoffice\Office\stelmofire.xcu"/>
         <EditorIndex Value="-1"/>
         <CursorPos X="22" Y="25"/>
         <UsageCount Value="9"/>
@@ -86,7 +84,7 @@
         <DefaultSyntaxHighlighter Value="None"/>
       </Unit>
       <Unit>
-        <Filename Value="..\TEST\idl\XElmoFire.idl"/>
+        <Filename Value="..\TEST\idl\XStElmoFire.idl"/>
         <EditorIndex Value="-1"/>
         <CursorPos X="27" Y="8"/>
         <UsageCount Value="17"/>
@@ -121,7 +119,7 @@
         <DefaultSyntaxHighlighter Value="None"/>
       </Unit>
       <Unit>
-        <Filename Value="..\TEST\elmofire.components"/>
+        <Filename Value="..\TEST\stelmofire.components"/>
         <EditorIndex Value="-1"/>
         <CursorPos X="14" Y="8"/>
         <UsageCount Value="9"/>
@@ -135,14 +133,14 @@
         <DefaultSyntaxHighlighter Value="Python"/>
       </Unit>
       <Unit>
-        <Filename Value="..\TEST\pythonpath\org\openoffice\comp\addin\sample\python\elmofire.py"/>
+        <Filename Value="..\TEST\pythonpath\org\openoffice\comp\addin\sample\python\stelmofire.py"/>
         <EditorIndex Value="-1"/>
         <CursorPos X="26" Y="2"/>
         <UsageCount Value="12"/>
         <DefaultSyntaxHighlighter Value="Python"/>
       </Unit>
       <Unit>
-        <Filename Value="..\TEST\pythonpath\org\openoffice\comp\addin\sample\elmofire.py"/>
+        <Filename Value="..\TEST\pythonpath\org\openoffice\comp\addin\sample\stelmofire.py"/>
         <EditorIndex Value="-1"/>
         <UsageCount Value="9"/>
         <DefaultSyntaxHighlighter Value="Python"/>
@@ -155,19 +153,19 @@
         <DefaultSyntaxHighlighter Value="Python"/>
       </Unit>
       <Unit>
-        <Filename Value="..\TEST\pythonpath\org\openoffice\addin\python\elmofire.py"/>
+        <Filename Value="..\TEST\pythonpath\org\openoffice\addin\python\stelmofire.py"/>
         <EditorIndex Value="-1"/>
         <UsageCount Value="9"/>
         <DefaultSyntaxHighlighter Value="Python"/>
       </Unit>
       <Unit>
-        <Filename Value="..\TEST\pythonpath\org\openoffice\comp\addin\elmofire.py"/>
+        <Filename Value="..\TEST\pythonpath\org\openoffice\comp\addin\stelmofire.py"/>
         <EditorIndex Value="-1"/>
         <UsageCount Value="9"/>
         <DefaultSyntaxHighlighter Value="Python"/>
       </Unit>
       <Unit>
-        <Filename Value="..\TEST\pythonpath\addin\elmofire.py"/>
+        <Filename Value="..\TEST\pythonpath\addin\stelmofire.py"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="30"/>
         <CursorPos X="14" Y="54"/>
@@ -175,17 +173,18 @@
         <DefaultSyntaxHighlighter Value="Python"/>
       </Unit>
       <Unit>
-        <Filename Value="..\..\..\ELMOFIRE\ElmoFire\OLDE\LibreExtension\Scripts\elmofire.py"/>
+        <Filename Value="..\..\..\STELMOFIRE\StElmoFire\OLDE\LibreExtension\Scripts\stelmofire.py"/>
         <EditorIndex Value="-1"/>
         <UsageCount Value="9"/>
         <DefaultSyntaxHighlighter Value="Python"/>
       </Unit>
       <Unit>
-        <Filename Value="LibreAddIn\pythonpath\addin\elmofire.py"/>
-        <EditorIndex Value="-1"/>
-        <TopLine Value="115"/>
+        <Filename Value="LibreAddIn\pythonpath\addin\stelmofire.py"/>
+        <EditorIndex Value="1"/>
+        <TopLine Value="103"/>
         <CursorPos X="37" Y="125"/>
         <UsageCount Value="34"/>
+        <Loaded Value="True"/>
         <DefaultSyntaxHighlighter Value="Python"/>
       </Unit>
       <Unit>
@@ -197,15 +196,15 @@
       </Unit>
       <Unit>
         <Filename Value="LibreAddIn\description.xml"/>
-        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="2"/>
         <CursorPos Y="13"/>
         <UsageCount Value="33"/>
         <Loaded Value="True"/>
         <DefaultSyntaxHighlighter Value="XML"/>
       </Unit>
       <Unit>
-        <Filename Value="LibreAddIn\idl\XElmoFire.idl"/>
-        <EditorIndex Value="2"/>
+        <Filename Value="LibreAddIn\idl\XStElmoFire.idl"/>
+        <EditorIndex Value="4"/>
         <CursorPos X="26" Y="5"/>
         <UsageCount Value="33"/>
         <Loaded Value="True"/>
@@ -213,7 +212,7 @@
       </Unit>
       <Unit>
         <Filename Value="LibreAddIn\META-INF\manifest.xml"/>
-        <EditorIndex Value="3"/>
+        <EditorIndex Value="5"/>
         <CursorPos X="44" Y="3"/>
         <UsageCount Value="33"/>
         <Loaded Value="True"/>
@@ -221,7 +220,7 @@
       </Unit>
       <Unit>
         <Filename Value="LibreAddIn\install.py"/>
-        <EditorIndex Value="4"/>
+        <EditorIndex Value="6"/>
         <CursorPos X="22" Y="23"/>
         <UsageCount Value="33"/>
         <Loaded Value="True"/>
@@ -242,7 +241,7 @@
       </Unit>
       <Unit>
         <Filename Value="LibreAddIn\desc.txt"/>
-        <EditorIndex Value="1"/>
+        <EditorIndex Value="3"/>
         <CursorPos X="64"/>
         <UsageCount Value="21"/>
         <Loaded Value="True"/>
@@ -250,7 +249,8 @@
       </Unit>
       <Unit>
         <Filename Value="LibreAddIn\compile_idl.bat"/>
-        <EditorIndex Value="5"/>
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="7"/>
         <CursorPos X="28" Y="28"/>
         <UsageCount Value="21"/>
         <Loaded Value="True"/>
@@ -317,11 +317,12 @@
         <UsageCount Value="11"/>
       </Unit>
       <Unit>
-        <Filename Value="ExcelAddIn\ElmoFire.bas"/>
-        <EditorIndex Value="-1"/>
+        <Filename Value="ExcelAddIn\StElmoFire.bas"/>
+        <EditorIndex Value="8"/>
         <TopLine Value="145"/>
         <CursorPos X="29" Y="167"/>
         <UsageCount Value="11"/>
+        <Loaded Value="True"/>
         <DefaultSyntaxHighlighter Value="None"/>
       </Unit>
       <Unit>
