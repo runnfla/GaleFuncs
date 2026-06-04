@@ -39,7 +39,7 @@ Parameters are passed in the following order: first, the variables used in the f
 
 The number of variables is unlimited. Variables may be omitted (i.e., you can pass just the formula). All parameters are separated by commas. If the text of a variable, value, or formula is provided directly in the parameters of the ELMOSTR/ELMOVAL functions, it must be enclosed in double quotation marks.
 
-**Example**\
+**Example**
 ```text
        A             B                C               D                                           E
   +-----------+--------------+--------------+-----------------------------------------------------------------------+
