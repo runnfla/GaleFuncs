@@ -8,7 +8,8 @@
       <Unit>
         <Filename Value="stelmofire.lpr"/>
         <IsPartOfProject Value="True"/>
-        <CursorPos X="24" Y="40"/>
+        <IsVisibleTab Value="True"/>
+        <CursorPos X="45" Y="5"/>
         <UsageCount Value="101"/>
         <Loaded Value="True"/>
       </Unit>
@@ -182,7 +183,7 @@
         <Filename Value="LibreAddIn\pythonpath\addin\stelmofire.py"/>
         <EditorIndex Value="1"/>
         <TopLine Value="103"/>
-        <CursorPos X="37" Y="125"/>
+        <CursorPos X="18" Y="125"/>
         <UsageCount Value="34"/>
         <Loaded Value="True"/>
         <DefaultSyntaxHighlighter Value="Python"/>
@@ -249,9 +250,8 @@
       </Unit>
       <Unit>
         <Filename Value="LibreAddIn\compile_idl.bat"/>
-        <IsVisibleTab Value="True"/>
         <EditorIndex Value="7"/>
-        <CursorPos X="28" Y="28"/>
+        <CursorPos X="66" Y="17"/>
         <UsageCount Value="21"/>
         <Loaded Value="True"/>
         <DefaultSyntaxHighlighter Value="Bat"/>

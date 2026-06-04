@@ -27,7 +27,6 @@
       <Unit>
         <Filename Value="stelmofire.lpr"/>
         <IsPartOfProject Value="True"/>
-        <UnitName Value="stelmofire"/>
       </Unit>
       <Unit>
         <Filename Value="..\RunFormula\runformula.pas"/>

@@ -1,7 +1,7 @@
 //*****************************************************
 //  StElmoFire LibreOffice Add-In
 //  Version 0.1.b
-//  Rev. 1.05.2026
+//  Rev. 4.05.2026
 
 //  Author: Alexander Torubarov
 //  Contact: runfla@yandex.com
