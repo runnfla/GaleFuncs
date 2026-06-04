@@ -3,10 +3,10 @@
 The ElmoFire Add-In is an extension for LibreOffice Calc and Microsoft Excel powered by the [RunFormula](https://github.com/runnfla/RunFormula) scripting engine. It allows you to evaluate mathematical expressions and formulas with physical unit awareness, completely eliminating the need to create macros. Expressions and short scripts are written directly inside the spreadsheet cells. The RunFormula syntax is fully supported.
 
 With ElmoFire, you can:
-* Perform computations with **complex numbers and intervals**
-* **Validate physical dimensions** at every stage of the calculation
+* Perform evaluations with **complex numbers and intervals**
+* **Check physical dimensions** at every operation
 * **Automatically determine** the unit of measurement for the final result
-* **Convert values** from one unit system to another
+* **Convert values** between different unit systems
 
 **Compatibility**\
 \- LibreOffice Calc 64-bit on MS Windows\
