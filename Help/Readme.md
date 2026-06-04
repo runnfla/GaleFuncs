@@ -28,7 +28,7 @@ With ElmoFire, you can:
 5\. In the window that opens, select the Add-Ins section\
 6\. At the bottom of the window, select Excel Add-ins from the Manage drop-down list and click Go\
 7\. In the dialog box that appears, click Browse and select the path to the extracted ElmoFire Excel.xlam file\
-8\. Make sure that the ElmoFire add-in appears in the list and is checked and click OK\
+8\. Make sure that the ElmoFire add-in appears in the list and is checked and click OK
 
 
 
