@@ -9,14 +9,14 @@ With ElmoFire, you can:
 * **Convert values** between different unit systems
 
 **Compatibility**\
-\- LibreOffice Calc x86‑64 on Windows and Linux
+\- LibreOffice Calc x86‑64 on Windows and Linux\
 \- Microsoft Excel 64-bit on Windows
 
 **Installation in LibreOffice Calc**\
-1\. Download the corresponding .oxt file from the [Add-In](https://github.com/runnfla/ElmoFire/tree/main/Add-In/LibreOffice%20Calc) directory\
-2\. From the Calc menu, select Tools \-\-> Extensions\
-3\. In the window that opens, click the Add button\
-4\. Select the downloaded .oxt file and click Open\
+1\. Download the corresponding `.oxt` file from the [Add-In](https://github.com/runnfla/ElmoFire/tree/main/Add-In/LibreOffice%20Calc) directory\
+2\. In LibreOffice Calc, go to **Tools \-\-> Extensions**\
+3\. In the window that opens, click the **Add** button\
+4\. Select the downloaded `.oxt` file and click **Open**\
 5\. Restart LibreOffice Calc for the changes to take effect
 
 **Installation in Microsoft Excel**\
