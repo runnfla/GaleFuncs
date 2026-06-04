@@ -21,18 +21,14 @@ With ElmoFire, you can:
 5\. Restart LibreOffice Calc for the changes to take effect
 
 **Installation in Microsoft Excel**\
-
-1. Скачайте архив ElmoFire Excel.zip со страницы [Releases](ссылка_на_рел
-2. Распакуйте его содержимое в любую удобную и постоянную папку на вашем компьютере
-(например, `C:\Addins\ElmoFire\`)
-3. Важно: не удаляйте и не перемещайте файлы .xlam и .dll после установки, иначе
-надстройка перестанет работать
-4. Запустите MS Excel
-5. На Ленте нажмите вкладку Файл, выберите пункт Параметры (в самом низу левой панели)
-6. В открывшемся окне выберите раздел Надстройки
-7. В нижней части окна в выпадающем списке «Управление» выберите **Надстройки Excel** и нажмите кнопку **Перейти...**.
-   * В открывшемся окне нажмите кнопку **Обзор...** и укажите путь к распакованному файлу `ElmoFire.xlam`.
-   * Убедитесь, что в списке появилась надстройка `ElmoFire` и напротив нее стоит галочка. Нажмите **OK**.
+1\. Download the ElmoFire Excel.zip archive from the [Add-In](https://github.com/runnfla/ElmoFire/tree/main/Add-In/MS%20Excel) directory\
+2\. Extract the zip archive to any convenient and permanent folder on your computer (e.g., `C:\ElmoFire\`)
+3\. **Important:** Do not delete or move the .xlam and .dll files after installation, otherwise the add-in will stop working
+4\. Start MS Excel, click the File tab on the Ribbon and select Options (at the bottom of the left panel)
+5\. In the window that opens, select the Add-Ins section
+6\. At the bottom of the window, select Excel Add-ins from the Manage drop-down list and click Go
+7\. In the dialog box that appears, click Browse and select the path to the extracted ElmoFire Excel.xlam file
+8\. Make sure that the ElmoFire add-in appears in the list and is checked and click OK
 
 
 
