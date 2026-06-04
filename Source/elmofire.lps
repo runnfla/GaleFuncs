@@ -180,7 +180,9 @@
       </Unit>
       <Unit>
         <Filename Value="LibreAddIn\pythonpath\addin\elmofire.py"/>
+        <IsVisibleTab Value="True"/>
         <EditorIndex Value="1"/>
+        <TopLine Value="107"/>
         <CursorPos X="17" Y="3"/>
         <UsageCount Value="34"/>
         <Loaded Value="True"/>
@@ -315,7 +317,6 @@
       </Unit>
       <Unit>
         <Filename Value="ExcelAddIn\ElmoFire.bas"/>
-        <IsVisibleTab Value="True"/>
         <EditorIndex Value="8"/>
         <CursorPos X="31" Y="75"/>
         <UsageCount Value="11"/>
