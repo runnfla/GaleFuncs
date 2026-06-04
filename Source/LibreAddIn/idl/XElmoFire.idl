@@ -2,7 +2,7 @@
 
 module addins {
 
-    interface XElmoFire : com::sun::star::uno::XInterface
+    interface XStElmoFire : com::sun::star::uno::XInterface
         {
             string elmostr([in] sequence<any> args);
             any elmoval([in] sequence<any> args);

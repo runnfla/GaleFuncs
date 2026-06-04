@@ -1,6 +1,6 @@
 <manifest:manifest>
 <manifest:file-entry manifest:media-type="application/vnd.sun.star.uno-typelibrary;type=RDB"
-                     manifest:full-path="elmofire.rdb"/>
+                     manifest:full-path="stelmofire.rdb"/>
 <manifest:file-entry manifest:media-type="application/vnd.sun.star.uno-component;type=Python"
                      manifest:full-path="install.py"/>
 </manifest:manifest>

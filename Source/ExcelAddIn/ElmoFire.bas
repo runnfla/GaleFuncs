@@ -1,4 +1,4 @@
-Attribute VB_Name = "ElmoFire"
+Attribute VB_Name = "StElmoFire"
 Option Explicit
 
 ' --- Windows API for Memory and Libraries ---
@@ -8,11 +8,11 @@ Private Declare PtrSafe Function lstrcpyA Lib "kernel32" (ByVal lpString1 As Str
 Private Declare PtrSafe Function lstrlenA Lib "kernel32" (ByVal lpString As LongPtr) As Long
 Private Declare PtrSafe Function CopyMemory Lib "kernel32" Alias "RtlMoveMemory" (ByRef Destination As Any, ByRef Source As Any, ByVal length As Long) As Long
 
-' --- ElmoFire DLL functions ---
+' --- StElmoFire DLL functions ---
 ' Pass all parameters strictly as numeric memory pointers (ByVal LongPtr)
-Private Declare PtrSafe Function elmo_str_vba Lib "elmofire64.dll" (ByVal pStr As LongPtr, ByVal pStruct As LongPtr) As Long
-Private Declare PtrSafe Function elmo_val_vba Lib "elmofire64.dll" (ByVal pStr As LongPtr, ByVal pStruct As LongPtr) As Long
-Private Declare PtrSafe Function elmo_free_vba Lib "elmofire64.dll" (ByVal ptr As LongPtr) As Long
+Private Declare PtrSafe Function elmo_str_vba Lib "stelmofire64.dll" (ByVal pStr As LongPtr, ByVal pStruct As LongPtr) As Long
+Private Declare PtrSafe Function elmo_val_vba Lib "stelmofire64.dll" (ByVal pStr As LongPtr, ByVal pStruct As LongPtr) As Long
+Private Declare PtrSafe Function elmo_free_vba Lib "stelmofire64.dll" (ByVal ptr As LongPtr) As Long
 
 Private hLibModule As LongPtr
 
@@ -21,10 +21,10 @@ Private Function DllLoader() As Boolean
         DllLoader = True
         Exit Function
     End If
-    hLibModule = GetModuleHandle("elmofire64.dll")
+    hLibModule = GetModuleHandle("stelmofire64.dll")
     If hLibModule = 0 Then
         Dim dllPath As String
-        dllPath = ThisWorkbook.Path & "\elmofire64.dll"
+        dllPath = ThisWorkbook.Path & "\stelmofire64.dll"
         If Dir(dllPath) <> "" Then hLibModule = LoadLibrary(dllPath)
     End If
     DllLoader = (hLibModule <> 0)
@@ -104,7 +104,7 @@ Private Function CallRunfla(ByVal funcId As Long, ByVal args As Variant) As Vari
     On Error GoTo ErrorHandler
 
     If Not DllLoader() Then
-        CallRunfla = "ElmoFire Add-In ERROR: Library elmofire64.dll not found."
+        CallRunfla = "StElmoFire Add-In ERROR: Library stelmofire64.dll not found."
         Exit Function
     End If
 
@@ -164,7 +164,7 @@ Private Function CallRunfla(ByVal funcId As Long, ByVal args As Variant) As Vari
     Exit Function
 
 ErrorHandler:
-    CallRunfla = "ElmoFire Add-In ERROR: " & Err.Description
+    CallRunfla = "StElmoFire Add-In ERROR: " & Err.Description
 End Function
 
 ' --- Excel User-Defined Functions ---

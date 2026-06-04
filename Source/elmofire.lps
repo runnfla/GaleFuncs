@@ -8,9 +8,11 @@
       <Unit>
         <Filename Value="elmofire.lpr"/>
         <IsPartOfProject Value="True"/>
-        <CursorPos X="48" Y="26"/>
+        <UnitName Value="stelmofire"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="19"/>
+        <CursorPos X="24" Y="40"/>
         <UsageCount Value="101"/>
-        <Loaded Value="True"/>
       </Unit>
       <Unit>
         <Filename Value="..\RunFormula\runformula.pas"/>
@@ -180,12 +182,10 @@
       </Unit>
       <Unit>
         <Filename Value="LibreAddIn\pythonpath\addin\elmofire.py"/>
-        <IsVisibleTab Value="True"/>
-        <EditorIndex Value="1"/>
-        <TopLine Value="107"/>
-        <CursorPos X="17" Y="3"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="115"/>
+        <CursorPos X="37" Y="125"/>
         <UsageCount Value="34"/>
-        <Loaded Value="True"/>
         <DefaultSyntaxHighlighter Value="Python"/>
       </Unit>
       <Unit>
@@ -197,32 +197,32 @@
       </Unit>
       <Unit>
         <Filename Value="LibreAddIn\description.xml"/>
-        <EditorIndex Value="2"/>
-        <CursorPos X="47" Y="7"/>
+        <IsVisibleTab Value="True"/>
+        <CursorPos Y="13"/>
         <UsageCount Value="33"/>
         <Loaded Value="True"/>
         <DefaultSyntaxHighlighter Value="XML"/>
       </Unit>
       <Unit>
         <Filename Value="LibreAddIn\idl\XElmoFire.idl"/>
-        <EditorIndex Value="4"/>
-        <CursorPos X="16" Y="3"/>
+        <EditorIndex Value="2"/>
+        <CursorPos X="26" Y="5"/>
         <UsageCount Value="33"/>
         <Loaded Value="True"/>
         <DefaultSyntaxHighlighter Value="None"/>
       </Unit>
       <Unit>
         <Filename Value="LibreAddIn\META-INF\manifest.xml"/>
-        <EditorIndex Value="5"/>
-        <CursorPos X="21" Y="6"/>
+        <EditorIndex Value="3"/>
+        <CursorPos X="44" Y="3"/>
         <UsageCount Value="33"/>
         <Loaded Value="True"/>
         <DefaultSyntaxHighlighter Value="XML"/>
       </Unit>
       <Unit>
         <Filename Value="LibreAddIn\install.py"/>
-        <EditorIndex Value="6"/>
-        <CursorPos Y="17"/>
+        <EditorIndex Value="4"/>
+        <CursorPos X="22" Y="23"/>
         <UsageCount Value="33"/>
         <Loaded Value="True"/>
         <DefaultSyntaxHighlighter Value="Python"/>
@@ -242,7 +242,7 @@
       </Unit>
       <Unit>
         <Filename Value="LibreAddIn\desc.txt"/>
-        <EditorIndex Value="3"/>
+        <EditorIndex Value="1"/>
         <CursorPos X="64"/>
         <UsageCount Value="21"/>
         <Loaded Value="True"/>
@@ -250,7 +250,8 @@
       </Unit>
       <Unit>
         <Filename Value="LibreAddIn\compile_idl.bat"/>
-        <EditorIndex Value="7"/>
+        <EditorIndex Value="5"/>
+        <CursorPos X="28" Y="28"/>
         <UsageCount Value="21"/>
         <Loaded Value="True"/>
         <DefaultSyntaxHighlighter Value="Bat"/>
@@ -317,10 +318,10 @@
       </Unit>
       <Unit>
         <Filename Value="ExcelAddIn\ElmoFire.bas"/>
-        <EditorIndex Value="8"/>
-        <CursorPos X="31" Y="75"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="145"/>
+        <CursorPos X="29" Y="167"/>
         <UsageCount Value="11"/>
-        <Loaded Value="True"/>
         <DefaultSyntaxHighlighter Value="None"/>
       </Unit>
       <Unit>
@@ -339,121 +340,30 @@
         <DefaultSyntaxHighlighter Value="Text"/>
       </Unit>
     </Units>
-    <JumpHistory HistoryIndex="28">
+    <JumpHistory HistoryIndex="5">
       <Position>
-        <Filename Value="elmofire.lpr"/>
-        <Caret Line="147" Column="27" TopLine="134"/>
+        <Filename Value="LibreAddIn\install.py"/>
+        <Caret Column="20"/>
       </Position>
       <Position>
-        <Filename Value="elmofire.lpr"/>
-        <Caret Line="110" Column="14" TopLine="89"/>
+        <Filename Value="LibreAddIn\install.py"/>
+        <Caret Line="6" Column="40"/>
       </Position>
       <Position>
-        <Filename Value="elmofire.lpr"/>
-        <Caret Line="30" Column="33" TopLine="28"/>
+        <Filename Value="LibreAddIn\install.py"/>
+        <Caret Line="9" Column="39"/>
       </Position>
       <Position>
-        <Filename Value="elmofire.lpr"/>
-        <Caret Line="59" Column="5" TopLine="40"/>
+        <Filename Value="LibreAddIn\install.py"/>
+        <Caret Line="11" Column="28"/>
       </Position>
       <Position>
-        <Filename Value="elmofire.lpr"/>
-        <Caret Line="54" Column="38" TopLine="37"/>
+        <Filename Value="LibreAddIn\install.py"/>
+        <Caret Line="12" Column="39"/>
       </Position>
       <Position>
-        <Filename Value="elmofire.lpr"/>
-        <Caret Line="52" Column="41" TopLine="43"/>
-      </Position>
-      <Position>
-        <Filename Value="elmofire.lpr"/>
-        <Caret Line="64" TopLine="52"/>
-      </Position>
-      <Position>
-        <Filename Value="elmofire.lpr"/>
-        <Caret Line="123" Column="6" TopLine="113"/>
-      </Position>
-      <Position>
-        <Filename Value="elmofire.lpr"/>
-        <Caret Line="157" Column="5" TopLine="136"/>
-      </Position>
-      <Position>
-        <Filename Value="elmofire.lpr"/>
-        <Caret Line="165" Column="15" TopLine="147"/>
-      </Position>
-      <Position>
-        <Filename Value="elmofire.lpr"/>
-        <Caret Line="132" Column="59" TopLine="123"/>
-      </Position>
-      <Position>
-        <Filename Value="elmofire.lpr"/>
-        <Caret Line="165" Column="49" TopLine="144"/>
-      </Position>
-      <Position>
-        <Filename Value="elmofire.lpr"/>
-        <Caret Line="157" Column="14" TopLine="144"/>
-      </Position>
-      <Position>
-        <Filename Value="elmofire.lpr"/>
-        <Caret Line="161" Column="13" TopLine="144"/>
-      </Position>
-      <Position>
-        <Filename Value="elmofire.lpr"/>
-        <Caret Line="170" TopLine="150"/>
-      </Position>
-      <Position>
-        <Filename Value="elmofire.lpr"/>
-        <Caret Line="155" Column="60" TopLine="147"/>
-      </Position>
-      <Position>
-        <Filename Value="elmofire.lpr"/>
-        <Caret Line="155" Column="43" TopLine="144"/>
-      </Position>
-      <Position>
-        <Filename Value="elmofire.lpr"/>
-        <Caret Line="180" Column="5" TopLine="166"/>
-      </Position>
-      <Position>
-        <Filename Value="elmofire.lpr"/>
-        <Caret Line="189" Column="28" TopLine="166"/>
-      </Position>
-      <Position>
-        <Filename Value="LibreAddIn\pythonpath\addin\elmofire.py"/>
-        <Caret Line="55" TopLine="37"/>
-      </Position>
-      <Position>
-        <Filename Value="LibreAddIn\pythonpath\addin\elmofire.py"/>
-        <Caret Line="84" Column="26" TopLine="63"/>
-      </Position>
-      <Position>
-        <Filename Value="LibreAddIn\pythonpath\addin\elmofire.py"/>
-        <Caret Line="85" Column="26" TopLine="64"/>
-      </Position>
-      <Position>
-        <Filename Value="LibreAddIn\pythonpath\addin\elmofire.py"/>
-        <Caret Line="119" Column="35" TopLine="110"/>
-      </Position>
-      <Position>
-        <Filename Value="elmofire.lpr"/>
-        <Caret Line="199" TopLine="175"/>
-      </Position>
-      <Position>
-        <Filename Value="elmofire.lpr"/>
-        <Caret Line="20" Column="32" TopLine="13"/>
-      </Position>
-      <Position>
-        <Filename Value="ExcelAddIn\ElmoFire.bas"/>
-      </Position>
-      <Position>
-        <Filename Value="elmofire.lpr"/>
-        <Caret Line="225" TopLine="200"/>
-      </Position>
-      <Position>
-        <Filename Value="ExcelAddIn\ElmoFire.bas"/>
-        <Caret Line="2" Column="8"/>
-      </Position>
-      <Position>
-        <Filename Value="ExcelAddIn\ElmoFire.bas"/>
-        <Caret Line="167" Column="25" TopLine="153"/>
+        <Filename Value="LibreAddIn\compile_idl.bat"/>
+        <Caret Column="43"/>
       </Position>
     </JumpHistory>
     <RunParams>

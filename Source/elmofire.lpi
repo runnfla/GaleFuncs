@@ -27,6 +27,7 @@
       <Unit>
         <Filename Value="elmofire.lpr"/>
         <IsPartOfProject Value="True"/>
+        <UnitName Value="stelmofire"/>
       </Unit>
       <Unit>
         <Filename Value="..\RunFormula\runformula.pas"/>
@@ -44,7 +45,7 @@
     <Version Value="11"/>
     <PathDelim Value="\"/>
     <Target>
-      <Filename Value="elmofire"/>
+      <Filename Value="stelmofire64"/>
     </Target>
     <SearchPaths>
       <IncludeFiles Value="$(ProjOutDir)"/>

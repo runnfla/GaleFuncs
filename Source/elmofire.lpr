@@ -1,12 +1,12 @@
 //*****************************************************
-//  ElmoFire LibreOffice Add-In
+//  StElmoFire LibreOffice Add-In
 //  Version 0.1.b
 //  Rev. 1.05.2026
 
 //  Author: Alexander Torubarov
 //  Contact: runfla@yandex.com
 
-//  Filename: elmofire.lpr
+//  Filename: stelmofire.lpr
 //  Source Code: Object Pascal / FreePascal
 //  Compatible: Lazarus 4.2 x64 win10
 
@@ -19,7 +19,7 @@
 
 // TODO -oElmo -cRev.2026.06.01:
 
-library elmofire;
+library stelmofire;
 
 {$mode objfpc}{$H+}
 
@@ -37,7 +37,7 @@ uses cmem,          // must be first
 const
   SI = SizeOf(SizeInt);
   ArgSpr = #$1F;
-  ElmoErr = 'ElmoFire Add-In ERROR';
+  ElmoErr = 'StElmoFire Add-In ERROR';
 
 type
   TDataRec = packed record

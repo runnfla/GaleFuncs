@@ -1,12 +1,12 @@
 #*****************************************************
-#  ElmoFire LibreOffice Add-In
+#  StElmoFire LibreOffice Add-In
 #  Version 0.1.b
 #  Rev. 1.06.2026
 
 #  Author: Alexander Torubarov
 #  Contact: runfla@yandex.com
 
-#  Filename: elmofire.py
+#  Filename: stelmofire.py
 #  Source Code: Python
 #  Compatible: LibreOffice Calc x64 win10 26.2.3.2
 
@@ -23,7 +23,7 @@ import ctypes
 import uno
 import unohelper
 import locale
-from addins import XElmoFire                      # addins is my unique identificator
+from addins import XStElmoFire                      # addins is my unique identificator
 from com.sun.star.sheet import XAddIn
 from com.sun.star.lang import XLocalizable, XServiceName, Locale
 
@@ -60,13 +60,13 @@ def call_runfla(func_id, flat_args):
         if lib is None:
             cx = uno.getComponentContext()
             pip = cx.getByName("/singletons/com.sun.star.deployment.PackageInformationProvider")
-            oxt_url = pip.getPackageLocation("addin.elmofire")
+            oxt_url = pip.getPackageLocation("addin.stelmofire")
             CURRENT_DIR = uno.fileUrlToSystemPath(oxt_url)
 
             if sys.platform == "win32":
-                LIB_NAME = "elmofire64.dll"
+                LIB_NAME = "stelmofire64.dll"
             else:
-                LIB_NAME = "elmofire64.so"
+                LIB_NAME = "stelmofire64.so"
 
             LIB_PATH = os.path.join(CURRENT_DIR, LIB_NAME)
 
@@ -125,15 +125,15 @@ def call_runfla(func_id, flat_args):
         return ""
 
     except Exception as err:
-        return f"ElmoFire Add-In ERROR: {str(err)}"
+        return f"StElmoFire Add-In ERROR: {str(err)}"
 
-class ElmoFire(unohelper.Base, XElmoFire, XAddIn, XServiceName, XLocalizable):
+class StElmoFire(unohelper.Base, XStElmoFire, XAddIn, XServiceName, XLocalizable):
     def __init__(self, ctx):
         self.ctx = ctx
         self.locale = Locale("en","US", "")
 
     def getServiceName(self):
-        return "ElmoFire unit-aware scripting engine"
+        return "StElmoFire unit-aware scripting engine"
 
     def setLocale(self, locale):
         self.locale = locale
