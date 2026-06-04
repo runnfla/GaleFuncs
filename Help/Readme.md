@@ -24,9 +24,9 @@ With ElmoFire, you can:
 2\. Extract files from the ZIP archive to a convenient and permanent folder on your computer (e.g., `C:\ElmoFire\`)\
 3\. **Important:** Do not delete or move the `.xlam` and `.dll` files after installation - otherwise, the add-in will stop working\
 4\. Open MS Excel. Click the **File** tab on the Ribbon and select **Options** (at the bottom of the left panel)\
-5\. In the **Excel Options** window, select the Add-Ins section\
+5\. In the **Excel Options** window, select the **Add-Ins** section\
 6\. At the bottom of the window, select **Excel Add-ins** from the **Manage** drop-down list and click **Go**\
-7\. In the **Add-Ins** dialog box, click **Browse**, select the extracted `ElmoFire Excel.xlam` file and click **Open**\
+7\. In the **Add-Ins** dialog box, click **Browse**, select the extracted `ElmoFire Excel.xlam` file and click **OK**\
 8\. Make sure that the **ElmoFire Excel** add-in appears in the list and is checked and click **OK**
 
 
