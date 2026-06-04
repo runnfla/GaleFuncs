@@ -29,6 +29,10 @@ With ElmoFire, you can:
 7\. In the **Add-Ins** dialog box, click **Browse**, select the extracted `ElmoFire Excel.xlam` file and click **OK**\
 8\. Make sure that the **ElmoFire Excel** add-in appears in the list and is checked and click **OK**
 
+Как использовать
+После установки in spreadsheet появятся две новых функции ELMOSTR() и ELMOVAL(). Параметры функций одинаковые. Результат ELMOSTR() - текстовая строка, содержащая результат вычисления, при необходимости, с указанием размерности. Результат ELMOVAL() - безразмерное число (или строка), пригодное для дальнейших высимлений.
+
+
 
 
 ```text
