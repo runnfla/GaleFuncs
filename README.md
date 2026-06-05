@@ -1,4 +1,4 @@
-# StElmoFire Add-In
+# GaleFuncs Add-In
 
 An independent open-source physics scripting extension for LibreOffice Calc
 
