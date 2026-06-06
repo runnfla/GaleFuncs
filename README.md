@@ -41,7 +41,7 @@ The number of variables is unlimited. Variables may be omitted (i.e., you can pa
 
 **Example**
 ```text
-       A             B                C                D                                          E
+       A             B                C                D                                           E
   +-----------+--------------+--------------+-------------------------------------------------------------------------+
 1 |  Voltage  |   U Units    |  Resistance  |        Power                               |      Formula               |
   +-----------+--------------+--------------+--------------------------------------------+----------------------------+
