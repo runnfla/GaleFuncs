@@ -19,13 +19,13 @@ if not exist "%COMPILER%" (
     goto end
 )
 
-echo [2/2] Compiling IDL to root stelmofire_types.rdb...
+echo [2/2] Compiling IDL to root galefuncs.rdb...
 set "PATH=%LO_DIR%\program;%PATH%"
-"%COMPILER%" "%TYPES_1%" "%TYPES_2%" "idl\XStElmoFire.idl" "stelmofire.rdb"
+"%COMPILER%" "%TYPES_1%" "%TYPES_2%" "idl\XGaleFuncs.idl" "galefuncs.rdb"
 
 if %errorlevel% equ 0 (
     echo ---------------------------------------------------
-    echo [SUCCESS] stelmofire.rdb was successfully created in root!
+    echo [SUCCESS] galefuncs.rdb was successfully created in root!
     echo ---------------------------------------------------
 ) else (
     echo ---------------------------------------------------

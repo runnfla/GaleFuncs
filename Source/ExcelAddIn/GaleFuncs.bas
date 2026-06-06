@@ -1,4 +1,4 @@
-Attribute VB_Name = "StElmoFire"
+Attribute VB_Name = "GaleFuncs"
 Option Explicit
 
 ' --- Windows API for Memory and Libraries ---
@@ -8,11 +8,11 @@ Private Declare PtrSafe Function lstrcpyA Lib "kernel32" (ByVal lpString1 As Str
 Private Declare PtrSafe Function lstrlenA Lib "kernel32" (ByVal lpString As LongPtr) As Long
 Private Declare PtrSafe Function CopyMemory Lib "kernel32" Alias "RtlMoveMemory" (ByRef Destination As Any, ByRef Source As Any, ByVal length As Long) As Long
 
-' --- StElmoFire DLL functions ---
+' --- GaleFuncs DLL functions ---
 ' Pass all parameters strictly as numeric memory pointers (ByVal LongPtr)
-Private Declare PtrSafe Function elmo_str_vba Lib "stelmofire64.dll" (ByVal pStr As LongPtr, ByVal pStruct As LongPtr) As Long
-Private Declare PtrSafe Function elmo_val_vba Lib "stelmofire64.dll" (ByVal pStr As LongPtr, ByVal pStruct As LongPtr) As Long
-Private Declare PtrSafe Function elmo_free_vba Lib "stelmofire64.dll" (ByVal ptr As LongPtr) As Long
+Private Declare PtrSafe Function gale_str_vba Lib "galefuncs64.dll" (ByVal pStr As LongPtr, ByVal pStruct As LongPtr) As Long
+Private Declare PtrSafe Function gale_val_vba Lib "galefuncs64.dll" (ByVal pStr As LongPtr, ByVal pStruct As LongPtr) As Long
+Private Declare PtrSafe Function gale_free_vba Lib "galefuncs64.dll" (ByVal ptr As LongPtr) As Long
 
 Private hLibModule As LongPtr
 
@@ -21,10 +21,10 @@ Private Function DllLoader() As Boolean
         DllLoader = True
         Exit Function
     End If
-    hLibModule = GetModuleHandle("stelmofire64.dll")
+    hLibModule = GetModuleHandle("galefuncs64.dll")
     If hLibModule = 0 Then
         Dim dllPath As String
-        dllPath = ThisWorkbook.Path & "\stelmofire64.dll"
+        dllPath = ThisWorkbook.Path & "\galefuncs64.dll"
         If Dir(dllPath) <> "" Then hLibModule = LoadLibrary(dllPath)
     End If
     DllLoader = (hLibModule <> 0)
@@ -60,7 +60,7 @@ Private Function ProcessCell(ByVal cell As Variant) As String
         ProcessCell = """"""
         Exit Function
     End If
-    
+
     ' 2. Check cell data type using VarType
     ' Numeric: vbInteger=2, vbLong=3, vbSingle=4, vbDouble=5, vbCurrency=6, vbLongLong=20
     Select Case VarType(cell)
@@ -70,13 +70,20 @@ Private Function ProcessCell(ByVal cell As Variant) As String
             Dim numStr As String
             numStr = Trim$(Str$(cell))
 
+            ' Fix leading dot (e.g. ".22" -> "0.22")
+            If Left$(numStr, 1) = "." Then
+                numStr = "0" & numStr
+            ElseIf Left$(numStr, 2) = "-." Then
+                numStr = "-0." & Mid$(numStr, 3)
+            End If
+
             ' Strip trailing dot if Str$ left it for integer-like values (e.g. "12.")
             If Right$(numStr, 1) = "." Then
                 ProcessCell = Left$(numStr, Len(numStr) - 1)
             Else
                 ProcessCell = numStr
             End If
-            
+
         Case Else
             ' Strings (vbString=8), booleans (vbBoolean=11), etc. -> STRICTLY wrapped in quotes
             ' Double internal quotes
@@ -104,7 +111,7 @@ Private Function CallRunfla(ByVal funcId As Long, ByVal args As Variant) As Vari
     On Error GoTo ErrorHandler
 
     If Not DllLoader() Then
-        CallRunfla = "StElmoFire Add-In ERROR: Library stelmofire64.dll not found."
+        CallRunfla = "GaleFuncs Add-In ERROR: Library galefuncs64.dll not found."
         Exit Function
     End If
 
@@ -122,9 +129,9 @@ Private Function CallRunfla(ByVal funcId As Long, ByVal args As Variant) As Vari
     
     ' Calling the DLL function, passing pointers to the start of arrays in memory
     If funcId = 0 Then
-        status = elmo_str_vba(VarPtr(ansiBytes(0)), VarPtr(rawBuffer(0)))
+        status = gale_str_vba(VarPtr(ansiBytes(0)), VarPtr(rawBuffer(0)))
     Else
-        status = elmo_val_vba(VarPtr(ansiBytes(0)), VarPtr(rawBuffer(0)))
+        status = gale_val_vba(VarPtr(ansiBytes(0)), VarPtr(rawBuffer(0)))
     End If
     
     ' Extracting DataType byte-by-byte from the first 4 bytes of the buffer (indices 0–3)
@@ -154,7 +161,7 @@ Private Function CallRunfla(ByVal funcId As Long, ByVal args As Variant) As Vari
                 CallRunfla = StringFromPtr(AsPChar)
                 ' Safely calling memory cleanup in the DLL
                 On Error Resume Next
-                elmo_free_vba AsPChar
+                gale_free_vba AsPChar
                 On Error GoTo ErrorHandler
             Else
                 CallRunfla = ""
@@ -164,15 +171,15 @@ Private Function CallRunfla(ByVal funcId As Long, ByVal args As Variant) As Vari
     Exit Function
 
 ErrorHandler:
-    CallRunfla = "StElmoFire Add-In ERROR: " & Err.Description
+    CallRunfla = "GaleFuncs Add-In ERROR: " & Err.Description
 End Function
 
 ' --- Excel User-Defined Functions ---
 
-Public Function ELMOSTR(ParamArray args() As Variant) As Variant
-    ELMOSTR = CallRunfla(0, args)
+Public Function GALESTR(ParamArray args() As Variant) As Variant
+    GALESTR = CallRunfla(0, args)
 End Function
 
-Public Function ELMOVAL(ParamArray args() As Variant) As Variant
-    ELMOVAL = CallRunfla(1, args)
+Public Function GALEVAL(ParamArray args() As Variant) As Variant
+    GALEVAL = CallRunfla(1, args)
 End Function

@@ -1,0 +1,11 @@
+#include <com/sun/star/uno/XInterface.idl>
+
+module addins {
+
+    interface XGaleFuncs : com::sun::star::uno::XInterface
+        {
+            string galestr([in] sequence<any> args);
+            any galeval([in] sequence<any> args);
+        };
+
+};

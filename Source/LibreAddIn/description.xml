@@ -4,11 +4,11 @@
              xmlns:d="http://openoffice.org/extensions/description/2006"
              xmlns:xlink="http://www.w3.org/1999/xlink">
 
-<identifier value="addin.stelmofire" />
+<identifier value="addin.galefuncs" />
 <version value="0.1.b" />
 
 <display-name>
-  <value xml:lang="en">StElmoFire Add-In</value>
+  <value xml:lang="en">GaleFuncs Add-In</value>
 </display-name>
 
 <extension-description>
@@ -16,7 +16,7 @@
 </extension-description>
 
 <publisher>
-  <name xlink:href="https://github.com/runnfla/StElmoFire" xml:lang="en">A.Torubarov</name>
+  <name xlink:href="https://github.com/runnfla/GaleFuncs" xml:lang="en">A.Torubarov</name>
 </publisher>
 
 <dependencies>

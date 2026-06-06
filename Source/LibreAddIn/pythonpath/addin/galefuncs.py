@@ -1,12 +1,12 @@
 #*****************************************************
-#  StElmoFire LibreOffice Add-In
+#  GaleFuncs LibreOffice Add-In
 #  Version 0.1.b
-#  Rev. 1.06.2026
+#  Rev. 5.06.2026
 
 #  Author: Alexander Torubarov
 #  Contact: runfla@yandex.com
 
-#  Filename: stelmofire.py
+#  Filename: galefuncs.py
 #  Source Code: Python
 #  Compatible: LibreOffice Calc x64 win10 26.2.3.2
 
@@ -23,7 +23,7 @@ import ctypes
 import uno
 import unohelper
 import locale
-from addins import XStElmoFire                      # addins is my unique identificator
+from addins import XGaleFuncs                      # addins is my unique identificator
 from com.sun.star.sheet import XAddIn
 from com.sun.star.lang import XLocalizable, XServiceName, Locale
 
@@ -60,35 +60,35 @@ def call_runfla(func_id, flat_args):
         if lib is None:
             cx = uno.getComponentContext()
             pip = cx.getByName("/singletons/com.sun.star.deployment.PackageInformationProvider")
-            oxt_url = pip.getPackageLocation("addin.stelmofire")
+            oxt_url = pip.getPackageLocation("addin.galefuncs")
             CURRENT_DIR = uno.fileUrlToSystemPath(oxt_url)
 
             if sys.platform == "win32":
-                LIB_NAME = "stelmofire64.dll"
+                LIB_NAME = "galefuncs64.dll"
             else:
-                LIB_NAME = "stelmofire64.so"
+                LIB_NAME = "galefuncs64.so"
 
             LIB_PATH = os.path.join(CURRENT_DIR, LIB_NAME)
 
             if not os.path.exists(LIB_PATH):
-                raise RuntimeError(f"Library not found at {LIB_PATH}")
+                raise RuntimeError(f"Library {LIB_NAME} not found at {LIB_PATH}")
 
             lib = ctypes.CDLL(LIB_PATH)
 
-            lib.elmo_str_py.argtypes = [ctypes.c_char_p, ctypes.POINTER(DataRec)]
-            lib.elmo_str_py.restype = ctypes.c_int
+            lib.gale_str_py.argtypes = [ctypes.c_char_p, ctypes.POINTER(DataRec)]
+            lib.gale_str_py.restype = ctypes.c_int
 
-            lib.elmo_val_py.argtypes = [ctypes.c_char_p, ctypes.POINTER(DataRec)]
-            lib.elmo_val_py.restype = ctypes.c_int
+            lib.gale_val_py.argtypes = [ctypes.c_char_p, ctypes.POINTER(DataRec)]
+            lib.gale_val_py.restype = ctypes.c_int
 
-            lib.elmo_free_py.argtypes = [ctypes.c_char_p]
-            lib.elmo_free_py.restype = ctypes.c_int
+            lib.gale_free_py.argtypes = [ctypes.c_char_p]
+            lib.gale_free_py.restype = ctypes.c_int
 
         # mapping function ID to the specific library method
         if func_id == 0:
-            target_func = lib.elmo_str_py
+            target_func = lib.gale_str_py
         else:
-            target_func = lib.elmo_val_py
+            target_func = lib.gale_val_py
 
         # fast byte buffer generation
         packed_bytes = fast_pack(flat_args)
@@ -116,7 +116,7 @@ def call_runfla(func_id, flat_args):
             finally:
                 # ensuring that a library crash won't close LibreCalc
                 try:
-                    lib.elmo_free_py(ptr)
+                    lib.gale_free_py(ptr)
                 except Exception:
                     pass
 
@@ -125,15 +125,15 @@ def call_runfla(func_id, flat_args):
         return ""
 
     except Exception as err:
-        return f"StElmoFire Add-In ERROR: {str(err)}"
+        return f"GaleFuncs Add-In ERROR: {str(err)}"
 
-class StElmoFire(unohelper.Base, XStElmoFire, XAddIn, XServiceName, XLocalizable):
+class GaleFuncs(unohelper.Base, XGaleFuncs, XAddIn, XServiceName, XLocalizable):
     def __init__(self, ctx):
         self.ctx = ctx
         self.locale = Locale("en","US", "")
 
     def getServiceName(self):
-        return "StElmoFire unit-aware scripting engine"
+        return "GaleFuncs unit-aware scripting engine"
 
     def setLocale(self, locale):
         self.locale = locale
@@ -148,9 +148,9 @@ class StElmoFire(unohelper.Base, XStElmoFire, XAddIn, XServiceName, XLocalizable
         return aProgrammaticName
 
     def getFunctionDescription(self , aProgrammaticName):
-        if aProgrammaticName == "elmostr":
+        if aProgrammaticName == "galestr":
             return "Run Formula and returns a string with units"
-        elif aProgrammaticName == "elmoval":
+        elif aProgrammaticName == "galeval":
             return "Run Formula and returns a value without units"
         return ""
 
@@ -163,9 +163,9 @@ class StElmoFire(unohelper.Base, XStElmoFire, XAddIn, XServiceName, XLocalizable
     def getDisplayArgumentName(self, aProgrammaticFunctionName, nArgument):
         return "0"
 
-    def elmostr(self, *args) -> str:
+    def galestr(self, *args) -> str:
         return call_runfla(0, args)
 
-    def elmoval(self, *args):
+    def galeval(self, *args):
         return call_runfla(1, args)
 
