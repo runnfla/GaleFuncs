@@ -4,23 +4,24 @@
              xmlns:d="http://openoffice.org/extensions/description/2006"
              xmlns:xlink="http://www.w3.org/1999/xlink">
 
-<identifier value="addin.galefuncs" />
-<version value="0.1.b" />
+<identifier value="addin.runfla.galefuncs" />
+<version value="0.1.2" />
+<platform value="windows_x86_64,linux_x86_64" />
 
 <display-name>
-  <value xml:lang="en">GaleFuncs Add-In</value>
+  <name lang="en">GaleFuncs Add-In</name>
 </display-name>
 
 <extension-description>
-  <src xml:lang="en" xlink:href="desc.txt"/>
+  <src xlink:href="desc.txt" lang="en" />
 </extension-description>
 
 <publisher>
-  <name xlink:href="https://github.com/runnfla/GaleFuncs" xml:lang="en">A.Torubarov</name>
+  <name xlink:href="https://github.com/runnfla/GaleFuncs" lang="en">A.Torubarov</name>
 </publisher>
 
-<dependencies>
-  <OpenOffice.org-minimal-version value="4.0" d:name="LibreOffice 4.0"/>
-</dependencies>
+<update-information>
+  <src xlink:href="https://raw.githubusercontent.com/runnfla/GaleFuncs/refs/heads/main/galefuncs.update.xml" />
+</update-information>
 
 </description>

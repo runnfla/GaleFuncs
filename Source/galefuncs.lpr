@@ -1,7 +1,7 @@
 //*****************************************************
 //  GaleFuncs LibreOffice Add-In
-//  Version 0.1.b
-//  Rev. 5.05.2026
+//  Version 0.1.2
+//  Rev. 7.05.2026
 
 //  Author: Alexander Torubarov
 //  Contact: runfla@yandex.com
@@ -23,7 +23,7 @@ library galefuncs;
 
 {$mode objfpc}{$H+}
 
-uses cmem,          // must be first
+uses cmem,                 // must be first
   SysUtils, Math,
   RunFormula in 'RunFormula/runformula.pas';
 

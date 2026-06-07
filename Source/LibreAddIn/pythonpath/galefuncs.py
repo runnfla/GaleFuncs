@@ -1,7 +1,7 @@
 #*****************************************************
 #  GaleFuncs LibreOffice Add-In
-#  Version 0.1.b
-#  Rev. 5.06.2026
+#  Version 0.1.2
+#  Rev. 7.06.2026
 
 #  Author: Alexander Torubarov
 #  Contact: runfla@yandex.com
@@ -60,7 +60,7 @@ def call_runfla(func_id, flat_args):
         if lib is None:
             cx = uno.getComponentContext()
             pip = cx.getByName("/singletons/com.sun.star.deployment.PackageInformationProvider")
-            oxt_url = pip.getPackageLocation("addin.galefuncs")
+            oxt_url = pip.getPackageLocation("addin.runfla.galefuncs")
             CURRENT_DIR = uno.fileUrlToSystemPath(oxt_url)
 
             if sys.platform == "win32":

@@ -8,8 +8,8 @@
       <Unit>
         <Filename Value="galefuncs.lpr"/>
         <IsPartOfProject Value="True"/>
-        <CursorPos X="31" Y="7"/>
-        <UsageCount Value="22"/>
+        <CursorPos X="21" Y="3"/>
+        <UsageCount Value="26"/>
         <Loaded Value="True"/>
       </Unit>
       <Unit>
@@ -19,45 +19,45 @@
         <WindowIndex Value="-1"/>
         <TopLine Value="-1"/>
         <CursorPos X="-1" Y="-1"/>
-        <UsageCount Value="22"/>
+        <UsageCount Value="26"/>
       </Unit>
       <Unit>
         <Filename Value="LibreAddIn\idl\XGaleFuncs.idl"/>
         <EditorIndex Value="3"/>
-        <CursorPos X="3" Y="11"/>
-        <UsageCount Value="11"/>
+        <CursorPos X="23" Y="3"/>
+        <UsageCount Value="12"/>
         <Loaded Value="True"/>
         <DefaultSyntaxHighlighter Value="None"/>
       </Unit>
       <Unit>
         <Filename Value="LibreAddIn\META-INF\manifest.xml"/>
         <EditorIndex Value="4"/>
-        <UsageCount Value="11"/>
+        <UsageCount Value="12"/>
         <Loaded Value="True"/>
         <DefaultSyntaxHighlighter Value="XML"/>
       </Unit>
       <Unit>
         <Filename Value="LibreAddIn\pythonpath\addin\galefuncs.py"/>
-        <EditorIndex Value="1"/>
-        <TopLine Value="61"/>
-        <CursorPos Y="70"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="56"/>
+        <CursorPos X="54" Y="68"/>
         <UsageCount Value="11"/>
-        <Loaded Value="True"/>
         <DefaultSyntaxHighlighter Value="Python"/>
       </Unit>
       <Unit>
         <Filename Value="LibreAddIn\description.xml"/>
         <EditorIndex Value="2"/>
-        <CursorPos X="53" Y="8"/>
-        <UsageCount Value="11"/>
+        <TopLine Value="2"/>
+        <CursorPos X="42" Y="7"/>
+        <UsageCount Value="12"/>
         <Loaded Value="True"/>
         <DefaultSyntaxHighlighter Value="XML"/>
       </Unit>
       <Unit>
         <Filename Value="LibreAddIn\install.py"/>
         <EditorIndex Value="5"/>
-        <CursorPos X="42" Y="3"/>
-        <UsageCount Value="11"/>
+        <CursorPos X="2" Y="14"/>
+        <UsageCount Value="12"/>
         <Loaded Value="True"/>
         <DefaultSyntaxHighlighter Value="Python"/>
       </Unit>
@@ -65,14 +65,14 @@
         <Filename Value="LibreAddIn\compile_idl.bat"/>
         <EditorIndex Value="6"/>
         <CursorPos X="49" Y="3"/>
-        <UsageCount Value="11"/>
+        <UsageCount Value="12"/>
         <Loaded Value="True"/>
         <DefaultSyntaxHighlighter Value="Bat"/>
       </Unit>
       <Unit>
         <Filename Value="LibreAddIn\desc.txt"/>
         <EditorIndex Value="7"/>
-        <UsageCount Value="11"/>
+        <UsageCount Value="12"/>
         <Loaded Value="True"/>
         <DefaultSyntaxHighlighter Value="Text"/>
       </Unit>
@@ -80,14 +80,86 @@
         <Filename Value="ExcelAddIn\GaleFuncs.bas"/>
         <IsVisibleTab Value="True"/>
         <EditorIndex Value="8"/>
-        <TopLine Value="15"/>
         <CursorPos Y="95"/>
-        <UsageCount Value="11"/>
+        <UsageCount Value="12"/>
         <Loaded Value="True"/>
         <DefaultSyntaxHighlighter Value="None"/>
       </Unit>
+      <Unit>
+        <Filename Value="LibreAddIn\pythonpath\galefuncs.py"/>
+        <EditorIndex Value="1"/>
+        <CursorPos X="22" Y="3"/>
+        <UsageCount Value="11"/>
+        <Loaded Value="True"/>
+        <DefaultSyntaxHighlighter Value="Python"/>
+      </Unit>
     </Units>
-    <JumpHistory HistoryIndex="-1"/>
+    <JumpHistory HistoryIndex="15">
+      <Position>
+        <Filename Value="LibreAddIn\description.xml"/>
+        <Caret Line="4" Column="15"/>
+      </Position>
+      <Position>
+        <Filename Value="LibreAddIn\description.xml"/>
+        <Caret Column="50"/>
+      </Position>
+      <Position>
+        <Filename Value="LibreAddIn\description.xml"/>
+        <Caret Line="2" Column="41"/>
+      </Position>
+      <Position>
+        <Filename Value="LibreAddIn\description.xml"/>
+        <Caret Line="4" Column="75"/>
+      </Position>
+      <Position>
+        <Filename Value="LibreAddIn\description.xml"/>
+        <Caret Line="5" Column="76"/>
+      </Position>
+      <Position>
+        <Filename Value="LibreAddIn\description.xml"/>
+        <Caret Line="6" Column="55"/>
+      </Position>
+      <Position>
+        <Filename Value="LibreAddIn\description.xml"/>
+        <Caret Line="7" Column="55"/>
+      </Position>
+      <Position>
+        <Filename Value="LibreAddIn\description.xml"/>
+        <Caret Line="8" Column="56"/>
+      </Position>
+      <Position>
+        <Filename Value="LibreAddIn\description.xml"/>
+        <Caret Line="17" Column="53" TopLine="2"/>
+      </Position>
+      <Position>
+        <Filename Value="LibreAddIn\description.xml"/>
+        <Caret Line="15" Column="45" TopLine="2"/>
+      </Position>
+      <Position>
+        <Filename Value="LibreAddIn\description.xml"/>
+        <Caret Line="14" Column="48" TopLine="2"/>
+      </Position>
+      <Position>
+        <Filename Value="LibreAddIn\description.xml"/>
+        <Caret Line="11" Column="50" TopLine="2"/>
+      </Position>
+      <Position>
+        <Filename Value="LibreAddIn\description.xml"/>
+        <Caret Line="9" Column="67" TopLine="2"/>
+      </Position>
+      <Position>
+        <Filename Value="LibreAddIn\description.xml"/>
+        <Caret Line="8" Column="62" TopLine="2"/>
+      </Position>
+      <Position>
+        <Filename Value="LibreAddIn\description.xml"/>
+        <Caret Line="10" Column="60" TopLine="2"/>
+      </Position>
+      <Position>
+        <Filename Value="LibreAddIn\description.xml"/>
+        <Caret Line="11" Column="64" TopLine="2"/>
+      </Position>
+    </JumpHistory>
     <RunParams>
       <FormatVersion Value="2"/>
       <Modes ActiveMode=""/>
