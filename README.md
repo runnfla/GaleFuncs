@@ -13,7 +13,7 @@ With GaleFuncs, you can:
 \- Microsoft Excel 64-bit on Windows
 
 **Installation in LibreOffice Calc**\
-1\. Download the `galefuncs.oxt` file from the [Add-In](https://github.com/runnfla/GaleFuncs/tree/main/Add-In) directory\
+1\. Download the `GaleFuncs.oxt` file from the [Add-In](https://github.com/runnfla/GaleFuncs/tree/main/Add-In) directory\
 2\. In LibreOffice Calc, go to **Tools \-\-> Extensions**\
 3\. In the **Extensions** manager window, click the **Add** button\
 4\. Select the downloaded `.oxt` file and click **Open**\
