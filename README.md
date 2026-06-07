@@ -1,7 +1,5 @@
 # GaleFuncs Add-In
 
-An independent open-source physics scripting extension for LibreOffice Calc
-
 The GaleFuncs Add-In is an extension for LibreOffice Calc and Microsoft Excel powered by the [RunFormula](https://github.com/runnfla/RunFormula) scripting engine. It allows you to evaluate mathematical expressions and formulas with physical unit awareness, completely eliminating the need to create macros. Expressions and short scripts are written directly inside the spreadsheet cells. The RunFormula syntax is fully supported.
 
 With GaleFuncs, you can:
@@ -33,7 +31,7 @@ With GaleFuncs, you can:
 
 **How to use**\
 After installing the add‑in, two new functions will become available in your spreadsheet: GALESTR() and GALEVAL(). They have the same parameters.\
-The GALESTR() function returns a text string containing the calculation result, including units of measurement if applicable.\
+The GALESTR() function returns a text string containing the calculated result, including units of measurement if applicable.\
 The GALEVAL() function returns a raw, dimensionless number (or string) suitable for further calculations.\
 Parameters are passed in the following order: first, the variables used in the formula and their values are specified in pairs, followed by the formula (expression or script) itself at the end.
 
@@ -43,14 +41,14 @@ The number of variables is unlimited. Variables may be omitted (i.e., you can pa
 
 **Example**
 ```text
-       A             B                C                D                                          E
-  +-----------+--------------+--------------+-----------------------------------------------------------------------+
-1 |  Voltage  |   U Units    |  Resistance  |        Power                               |      Formula             |
-  +-----------+--------------+--------------+--------------------------------------------+--------------------------+
-2 |   0.22    |     kV       |    20`Ohm`   | =GALESTR("U", A2, "UX", B2, "R", C2, $E$2) |  qty(U, Ux)**2/value(R)  |
-  +-----------+--------------+--------------+--------------------------------------------+--------------------------+
-3 |   2.2     |     mV       |   0.1`kOhm`  | =GALESTR("U", A3, "UX", B3, "R", C3, $E$2) |                          |
-  +-----------+--------------+--------------+--------------------------------------------+--------------------------+
+       A             B                C                D                                           E
+  +-----------+--------------+--------------+-------------------------------------------------------------------------+
+1 |  Voltage  |   U Units    |  Resistance  |        Power                               |      Formula               |
+  +-----------+--------------+--------------+--------------------------------------------+----------------------------+
+2 |   0.22    |     kV       |    20`Ohm`   | =GALESTR("U", A2, "UX", B2, "R", C2, $E$2) |  qty(U, Ux)**2/value( R )  |
+  +-----------+--------------+--------------+--------------------------------------------+----------------------------+
+3 |   2.2     |     mV       |   0.1`kOhm`  | =GALESTR("U", A3, "UX", B3, "R", C3, $E$2) |                            |
+  +-----------+--------------+--------------+--------------------------------------------+----------------------------+
 ```
 For details on the RunFormula syntax, refer to [Help/Eng/runflahelp-eng.txt](https://github.com/runnfla/GaleFuncs/blob/main/Help/Eng/runflahelp-eng.txt) ([Help/Rus/runflahelp.txt](https://github.com/runnfla/GaleFuncs/blob/main/Help/Rus/runflahelp.txt) in Russian).
 
