@@ -13,14 +13,14 @@ With GaleFuncs, you can:
 \- Microsoft Excel 64-bit on Windows
 
 **Installation in LibreOffice Calc**\
-1\. Download the corresponding `galefuncs.oxt` file from the [Add-In](https://github.com/runnfla/GaleFuncs/tree/main/Add-In) directory\
+1\. Download the `galefuncs.oxt` file from the [Add-In](https://github.com/runnfla/GaleFuncs/tree/main/Add-In) directory\
 2\. In LibreOffice Calc, go to **Tools \-\-> Extensions**\
 3\. In the **Extensions** manager window, click the **Add** button\
 4\. Select the downloaded `.oxt` file and click **Open**\
 5\. Restart LibreOffice Calc for the changes to take effect
 
 **Installation in Microsoft Excel**\
-1\. Download the `GaleFuncs Excel.zip` archive from the [Add-In](https://github.com/runnfla/GaleFuncs/tree/main/Add-In/MS%20Excel) directory\
+1\. Download the `GaleFuncs Excel.zip` archive from the [Add-In](https://github.com/runnfla/GaleFuncs/tree/main/Add-In) directory\
 2\. Extract files from the ZIP archive to a convenient and permanent folder on your computer (e.g., `C:\GaleFuncs\`)\
 3\. **Important:** Do not delete or move the `.xlam` and `.dll` files after installation - otherwise, the add-in will stop working\
 4\. Open MS Excel. Click the **File** tab on the Ribbon and select **Options** (at the bottom of the left panel)\
@@ -41,7 +41,7 @@ The number of variables is unlimited. Variables may be omitted (i.e., you can pa
 
 **Example**
 ```text
-       A             B                C                D                                           E
+       A             B              C                  D                                           E
   +-----------+--------------+--------------+-------------------------------------------------------------------------+
 1 |  Voltage  |   U Units    |  Resistance  |        Power                               |      Formula               |
   +-----------+--------------+--------------+--------------------------------------------+----------------------------+
