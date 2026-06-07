@@ -1,6 +1,6 @@
 # GaleFuncs Add-In
 
-The GaleFuncs Add-In is an extension for LibreOffice Calc and Microsoft Excel powered by the [RunFormula](https://github.com/runnfla/RunFormula) scripting engine. It allows you to evaluate mathematical expressions and formulas with physical unit awareness, completely eliminating the need to create macros. Expressions and short scripts are written directly inside the spreadsheet cells. The RunFormula syntax is fully supported.
+The GaleFuncs Add-In is an extension for LibreOffice Calc and Microsoft Excel powered by the [RunFormula](https://github.com/runnfla/RunFormula) scripting engine. It allows you to evaluate mathematical expressions and formulas with physical unit awareness, without the need to create macros. Expressions and short scripts are written directly inside the spreadsheet cells. The RunFormula syntax is fully supported.
 
 With GaleFuncs, you can:
 * Perform evaluations with **complex numbers and intervals**
@@ -13,7 +13,7 @@ With GaleFuncs, you can:
 \- Microsoft Excel 64-bit on Windows
 
 **Installation in LibreOffice Calc**\
-1\. Download the corresponding `.oxt` file from the [Add-In](https://github.com/runnfla/GaleFuncs/tree/main/Add-In/LibreOffice%20Calc) directory\
+1\. Download the corresponding `galefuncs.oxt` file from the [Add-In](https://github.com/runnfla/GaleFuncs/tree/main/Add-In) directory\
 2\. In LibreOffice Calc, go to **Tools \-\-> Extensions**\
 3\. In the **Extensions** manager window, click the **Add** button\
 4\. Select the downloaded `.oxt` file and click **Open**\
