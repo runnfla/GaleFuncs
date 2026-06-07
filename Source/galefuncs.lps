@@ -23,7 +23,7 @@
       </Unit>
       <Unit>
         <Filename Value="LibreAddIn\idl\XGaleFuncs.idl"/>
-        <EditorIndex Value="3"/>
+        <EditorIndex Value="4"/>
         <CursorPos X="23" Y="3"/>
         <UsageCount Value="12"/>
         <Loaded Value="True"/>
@@ -31,7 +31,7 @@
       </Unit>
       <Unit>
         <Filename Value="LibreAddIn\META-INF\manifest.xml"/>
-        <EditorIndex Value="4"/>
+        <EditorIndex Value="5"/>
         <UsageCount Value="12"/>
         <Loaded Value="True"/>
         <DefaultSyntaxHighlighter Value="XML"/>
@@ -46,16 +46,16 @@
       </Unit>
       <Unit>
         <Filename Value="LibreAddIn\description.xml"/>
-        <EditorIndex Value="2"/>
+        <EditorIndex Value="3"/>
         <TopLine Value="2"/>
-        <CursorPos X="42" Y="7"/>
+        <CursorPos X="18" Y="24"/>
         <UsageCount Value="12"/>
         <Loaded Value="True"/>
         <DefaultSyntaxHighlighter Value="XML"/>
       </Unit>
       <Unit>
         <Filename Value="LibreAddIn\install.py"/>
-        <EditorIndex Value="5"/>
+        <EditorIndex Value="6"/>
         <CursorPos X="2" Y="14"/>
         <UsageCount Value="12"/>
         <Loaded Value="True"/>
@@ -63,7 +63,7 @@
       </Unit>
       <Unit>
         <Filename Value="LibreAddIn\compile_idl.bat"/>
-        <EditorIndex Value="6"/>
+        <EditorIndex Value="7"/>
         <CursorPos X="49" Y="3"/>
         <UsageCount Value="12"/>
         <Loaded Value="True"/>
@@ -71,15 +71,14 @@
       </Unit>
       <Unit>
         <Filename Value="LibreAddIn\desc.txt"/>
-        <EditorIndex Value="7"/>
+        <EditorIndex Value="8"/>
         <UsageCount Value="12"/>
         <Loaded Value="True"/>
         <DefaultSyntaxHighlighter Value="Text"/>
       </Unit>
       <Unit>
         <Filename Value="ExcelAddIn\GaleFuncs.bas"/>
-        <IsVisibleTab Value="True"/>
-        <EditorIndex Value="8"/>
+        <EditorIndex Value="9"/>
         <CursorPos Y="95"/>
         <UsageCount Value="12"/>
         <Loaded Value="True"/>
@@ -87,11 +86,20 @@
       </Unit>
       <Unit>
         <Filename Value="LibreAddIn\pythonpath\galefuncs.py"/>
-        <EditorIndex Value="1"/>
+        <EditorIndex Value="2"/>
         <CursorPos X="22" Y="3"/>
         <UsageCount Value="11"/>
         <Loaded Value="True"/>
         <DefaultSyntaxHighlighter Value="Python"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\galefuncs.update.xml"/>
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="1"/>
+        <CursorPos X="30" Y="8"/>
+        <UsageCount Value="10"/>
+        <Loaded Value="True"/>
+        <DefaultSyntaxHighlighter Value="XML"/>
       </Unit>
     </Units>
     <JumpHistory HistoryIndex="15">
