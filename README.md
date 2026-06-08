@@ -1,6 +1,6 @@
 # GaleFuncs Add-In
 
-The GaleFuncs Add-In is an extension for LibreOffice Calc and Microsoft Excel powered by the [RunFormula](https://github.com/runnfla/RunFormula) scripting engine. It allows you to evaluate mathematical expressions and formulas with physical unit awareness, without the need to create macros. Expressions and short scripts are written directly inside the spreadsheet cells. The [RunFormula](https://github.com/runnfla/RunFormula) syntax is fully supported.
+The GaleFuncs Add-In is an extension for LibreOffice Calc and Microsoft Excel powered by the [RunFormula](https://github.com/runnfla/RunFormula) scripting engine. It allows you to evaluate mathematical expressions and formulas with physical unit awareness, without creating macros. Expressions and short scripts are written directly inside spreadsheet cells. The [RunFormula](https://github.com/runnfla/RunFormula) syntax is fully supported.
 
 With GaleFuncs, you can:
 * Perform evaluations with complex numbers and intervals
