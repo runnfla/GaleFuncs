@@ -3,51 +3,33 @@
   "features": [
     {
       "type": "Feature",
-      "properties": { "name": "Russia", "users": 1200 },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [[[28.0, 70.0], [180.0, 70.0], [180.0, 42.0], [40.0, 42.0], [28.0, 70.0]]]
-      }
+      "properties": { "name": "Russia (Moscow)", "users": 1200 },
+      "geometry": { "type": "Point", "coordinates": [37.6173, 55.7558] }
     },
     {
       "type": "Feature",
-      "properties": { "name": "Kazakhstan", "users": 250 },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [[[50.0, 55.0], [87.0, 55.0], [85.0, 42.0], [46.0, 42.0], [50.0, 55.0]]]
-      }
+      "properties": { "name": "Kazakhstan (Astana)", "users": 250 },
+      "geometry": { "type": "Point", "coordinates": [71.4491, 51.1694] }
     },
     {
       "type": "Feature",
-      "properties": { "name": "United States", "users": 850 },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [[[-125.0, 49.0], [-67.0, 49.0], [-80.0, 25.0], [-117.0, 25.0], [-125.0, 49.0]]]
-      }
+      "properties": { "name": "United States (Washington)", "users": 850 },
+      "geometry": { "type": "Point", "coordinates": [-77.0369, 38.9072] }
     },
     {
       "type": "Feature",
-      "properties": { "name": "Brazil", "users": 45 },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [[[-70.0, 5.0], [-35.0, -5.0], [-50.0, -30.0], [-70.0, -15.0], [-70.0, 5.0]]]
-      }
+      "properties": { "name": "Brazil (Brasilia)", "users": 45 },
+      "geometry": { "type": "Point", "coordinates": [-47.9292, -15.7801] }
     },
     {
       "type": "Feature",
-      "properties": { "name": "Germany", "users": 150 },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [[[6.0, 55.0], [15.0, 55.0], [14.0, 47.0], [6.0, 47.0], [6.0, 55.0]]]
-      }
+      "properties": { "name": "Germany (Berlin)", "users": 150 },
+      "geometry": { "type": "Point", "coordinates": [13.4050, 52.5200] }
     },
     {
       "type": "Feature",
-      "properties": { "name": "Egypt", "users": 5 },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [[[25.0, 31.0], [35.0, 31.0], [36.0, 22.0], [25.0, 22.0], [25.0, 31.0]]]
-      }
+      "properties": { "name": "Egypt (Cairo)", "users": 5 },
+      "geometry": { "type": "Point", "coordinates": [31.2357, 30.0444] }
     }
   ]
 }
