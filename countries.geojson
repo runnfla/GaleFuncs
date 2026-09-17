@@ -35,6 +35,11 @@
       "type": "Feature",
       "properties": { "name": "Швеция (Стокгольм)" },
       "geometry": { "type": "Point", "coordinates": [18.0686, 59.3293] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "name": "Чехия (Прага)" },
+      "geometry": { "type": "Point", "coordinates": [14.4378, 50.0755] }
     }
   ]
 }
