@@ -3,33 +3,38 @@
   "features": [
     {
       "type": "Feature",
-      "properties": { "name": "Russia (Moscow)", "users": 1200 },
-      "geometry": { "type": "Point", "coordinates": [37.6173, 55.7558] }
+      "properties": { "name": "Польша (Варшава)" },
+      "geometry": { "type": "Point", "coordinates": [21.0122, 52.2297] }
     },
     {
       "type": "Feature",
-      "properties": { "name": "Kazakhstan (Astana)", "users": 250 },
-      "geometry": { "type": "Point", "coordinates": [71.4491, 51.1694] }
-    },
-    {
-      "type": "Feature",
-      "properties": { "name": "United States (Washington)", "users": 850 },
-      "geometry": { "type": "Point", "coordinates": [-77.0369, 38.9072] }
-    },
-    {
-      "type": "Feature",
-      "properties": { "name": "Brazil (Brasilia)", "users": 45 },
-      "geometry": { "type": "Point", "coordinates": [-47.9292, -15.7801] }
-    },
-    {
-      "type": "Feature",
-      "properties": { "name": "Germany (Berlin)", "users": 150 },
+      "properties": { "name": "Германия (Берлин)" },
       "geometry": { "type": "Point", "coordinates": [13.4050, 52.5200] }
     },
     {
       "type": "Feature",
-      "properties": { "name": "Egypt (Cairo)", "users": 5 },
-      "geometry": { "type": "Point", "coordinates": [31.2357, 30.0444] }
+      "properties": { "name": "Бразилия (Бразилиа)" },
+      "geometry": { "type": "Point", "coordinates": [-47.9292, -15.7801] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "name": "Россия (Москва)" },
+      "geometry": { "type": "Point", "coordinates": [37.6173, 55.7558] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "name": "Италия (Рим)" },
+      "geometry": { "type": "Point", "coordinates": [12.4964, 41.9028] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "name": "Япония (Токио)" },
+      "geometry": { "type": "Point", "coordinates": [139.6917, 35.6895] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "name": "Швеция (Стокгольм)" },
+      "geometry": { "type": "Point", "coordinates": [18.0686, 59.3293] }
     }
   ]
 }
