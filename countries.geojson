@@ -41,5 +41,10 @@
       "properties": { "name": "Чехия (Прага)" },
       "geometry": { "type": "Point", "coordinates": [14.4378, 50.0755] }
     }
+    {
+      "type": "Feature",
+      "properties": { "name": "Франция (Париж)" },
+      "geometry": { "type": "Point", "coordinates": [2.3522, 48.8566] }
+    }
   ]
 }
