@@ -3,8 +3,8 @@
   "features": [
     {
       "type": "Feature",
-      "properties": { "name": "Польша (Варшава)", "marker-color": "#0f0f0f" },
-      "geometry": { "type": "Point", "coordinates": [21.0122, 52.2297], "marker-color": "#0f0f0f" }
+      "properties": { "name": "Польша (Варшава)", "marker-color": "#0f0f0f", "marker-size": "large", "marker-symbol": "city" },
+      "geometry": { "type": "Point", "coordinates": [21.0122, 52.2297] }
     },
     {
       "type": "Feature",
