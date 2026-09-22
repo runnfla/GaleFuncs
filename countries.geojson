@@ -3,7 +3,7 @@
   "features": [
     {
       "type": "Feature",
-      "properties": { "name": "🔴 Польша (Варшава)" },
+      "properties": { "title": "🔴 Польша (Варшава)" },
       "geometry": { "type": "Point", "coordinates": [21.0122, 52.2297] }
     },
     {
