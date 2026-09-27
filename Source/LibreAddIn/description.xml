@@ -13,12 +13,16 @@
 </display-name>
 
 <extension-description>
-  <src xlink:href="info.txt" lang="en" />
+  <src xlink:href="about.txt" lang="en" />
 </extension-description>
 
 <publisher>
   <name xlink:href="https://github.com/runnfla/GaleFuncs" lang="en">Alex Torubarov</name>
 </publisher>
+
+<icon>
+  <default xlink:href="gale42x42.jpg" />
+</icon>
 
 <update-information>
   <src xlink:href="https://storage.yandexcloud.net/gale/galefuncs.update.xml" />
