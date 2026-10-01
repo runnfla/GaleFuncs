@@ -1,21 +1,21 @@
-#*****************************************************
+#*********************************************************
 #  GaleFuncs Add-In for LibreOffice Calc
-#  Version 0.2.2
-#  Rev. 5.09.2026
+#  Version 0.2.3
+#  Rev. 1.10.2026
 
 #  Author: Alexander Torubarov
 #  Contact: runfla@yandex.com
 
 #  Filename: galefuncs.py
 #  Source Code: Python
-#  Compatible: LibreOffice Calc x64 win10 26.2.3.2
+#  Compatible: LibreOffice Calc x64 win10 linux 26.2.3.2
 
 #  Copyright (C) 2026 Alexander Torubarov
 #  Licensed under the MIT License.
 #  See the LICENSE file in the project root
 #  or a copy available at https://opensource.org
 #  for full license information.
-#*****************************************************
+#*********************************************************
 
 import os
 import sys

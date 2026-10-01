@@ -7,11 +7,11 @@
 
 #### ===== Version 0.2.1 - 2026-08-11 =====
 
-\- Number-to-string and string-to-number conversions now use the Unified Numeric Format without backticks for units\
+\- Number-to-string and string-to-number conversions now use the unified numeric format without backticks for units\
 \- New built-in functions: margin(), ball(), arg(), conj(), rect(), floor(), ceil(), find(), substr(), hexstr(), unitstr(), pow(), log(), tan()\
 \- Built-in functions value() and convert() have been renamed to val() and conv()\
 \- Added CGS and Astronomical units of measurement\
-\- Changed syntax: digits are no longer allowed immediately after a comma or a semicolon; a space or separator is required\
+\- Changed syntax: digits are no longer allowed immediately after a comma or a semicolon - a space or separator is required\
 \- Added new constant: MaxInt
 <br><br>
 
@@ -21,5 +21,10 @@
 \- Built-in function val() raises an exception instead of returning None\
 \- Added new constant: MinInt
 <br><br>
+
+#### ===== Version 0.2.3 - 2026-10-01 =====
+
+\ - Allowing units with offset in composite dimensions
+<br><br> 
 
 For more information, see the [help files](https://github.com/runnfla/GaleFuncs/tree/main/Help) and the RunFormula [changelog](https://github.com/runnfla/RunFormula/tree/main/Changelog).

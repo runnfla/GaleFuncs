@@ -1,7 +1,7 @@
 //*****************************************************
 //  GaleFuncs Add-In for LibreOffice Calc
-//  Version 0.2.2
-//  Rev. 4.09.2026
+//  Version 0.2.3
+//  Rev. 1.10.2026
 
 //  Author: Alexander Torubarov
 //  Contact: runfla@yandex.com
@@ -28,11 +28,11 @@ uses cmem,                // must be first
   RunFormula in 'RunFormula/runformula.pas';
 
 {$B-}                           // do not complete boolean evaluation
-{$POINTERMATH ON}               // allow use of pointer math
 {$R-}                           // switch off range checking
 {$Q-}                           // switch off overflow checking
 {$T-}                           // untyped address operator
 {$Z4}                           // Minimum enumeration type size
+{$POINTERMATH ON}               // allow use of pointer math
 {$inline on}
 
 type
