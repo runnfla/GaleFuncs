@@ -5,7 +5,7 @@
              xmlns:xlink="http://www.w3.org/1999/xlink">
 
 <identifier value="addin.runfla.galefuncs" />
-<version value="0.2.3" />
+<version value="0.2.2" />
 
 <update-download>
   <src xlink:href="https://storage.yandexcloud.net/gale/GaleFuncs-0.2.3-Calc.oxt" />

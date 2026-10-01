@@ -8,7 +8,6 @@
       <Unit>
         <Filename Value="galefuncs.lpr"/>
         <IsPartOfProject Value="True"/>
-        <IsVisibleTab Value="True"/>
         <CursorPos X="40" Y="6"/>
         <UsageCount Value="88"/>
         <Loaded Value="True"/>
@@ -94,8 +93,9 @@
       </Unit>
       <Unit>
         <Filename Value="..\galefuncs.update.xml"/>
+        <IsVisibleTab Value="True"/>
         <EditorIndex Value="3"/>
-        <CursorPos X="51" Y="7"/>
+        <CursorPos X="22" Y="8"/>
         <UsageCount Value="33"/>
         <Loaded Value="True"/>
         <DefaultSyntaxHighlighter Value="XML"/>
