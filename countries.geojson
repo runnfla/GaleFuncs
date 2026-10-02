@@ -55,6 +55,11 @@
       "type": "Feature",
       "properties": { "name": "Австралия (Канберра)" },
       "geometry": { "type": "Point", "coordinates": [149.1300, -35.2809] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "name": "США (Вашингтон)" },
+      "geometry": { "type": "Point", "coordinates": [-77.0369, 38.9072] }
     }
   ]
 }
