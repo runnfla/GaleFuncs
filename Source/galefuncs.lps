@@ -46,7 +46,6 @@
       <Unit>
         <Filename Value="LibreAddIn\description.xml"/>
         <EditorIndex Value="5"/>
-        <TopLine Value="7"/>
         <CursorPos X="49" Y="9"/>
         <UsageCount Value="35"/>
         <Loaded Value="True"/>
@@ -95,7 +94,7 @@
         <Filename Value="..\galefuncs.update.xml"/>
         <IsVisibleTab Value="True"/>
         <EditorIndex Value="3"/>
-        <CursorPos X="22" Y="8"/>
+        <CursorPos X="51" Y="7"/>
         <UsageCount Value="33"/>
         <Loaded Value="True"/>
         <DefaultSyntaxHighlighter Value="XML"/>
@@ -256,6 +255,7 @@
       <Unit>
         <Filename Value="C:\lazarus\fpc\3.2.2\source\rtl\inc\ustrings.inc"/>
         <EditorIndex Value="1"/>
+        <TopLine Value="4"/>
         <CursorPos X="42" Y="1799"/>
         <UsageCount Value="18"/>
         <Loaded Value="True"/>
